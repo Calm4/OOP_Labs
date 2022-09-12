@@ -6,3 +6,11 @@ E:\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.csproj.SuggestedBindingRedire
 E:\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.csproj.CoreCompileInputs.cache
 E:\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.exe
 E:\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.pdb
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\bin\Debug\Lab_01.exe.config
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\bin\Debug\Lab_01.exe
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\bin\Debug\Lab_01.pdb
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.csproj.AssemblyReference.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.csproj.SuggestedBindingRedirects.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.csproj.CoreCompileInputs.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.exe
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.pdb
