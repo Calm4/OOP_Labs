@@ -8,14 +8,9 @@ namespace Lab_02_2_
 {
     internal class Vector
     {
-        public int VectorX { get; set; }
-        public int VectorY { get; set; }
-        public int VectorZ { get; set; }
-
-
-        public static void ShowResult()
-        {
-        }
+        public double VectorX { get; set; }
+        public double VectorY { get; set; }
+        public double VectorZ { get; set; }  
 
         public static Vector operator +(Vector vector1, Vector vector2)
         {
