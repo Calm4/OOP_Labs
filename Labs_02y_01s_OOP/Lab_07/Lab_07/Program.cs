@@ -12,7 +12,11 @@ namespace Lab_07
         {
             string[] Gender = new string[2] { "Male", "Female" };
             Clothes Look_01 = new Clothes(Gender,180,32,FabricType.Wool,ClothesColor.Orange);
-            Console.WriteLine(Look_01.Gender[0]);
+            Pants pants_01 = new Pants(Gender,180,32,FabricType.Leather,ClothesColor.White);
+            Pants jacket_01 = new Pants(Gender, 180, 32, FabricType.Leather, ClothesColor.White);
+            Clothes Look_02 = new Clothes(pants_01,jacket_01);
+            Console.WriteLine(Look_02);
+            
         }
     }
     enum ClothesColor

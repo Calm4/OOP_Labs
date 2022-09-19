@@ -8,3 +8,13 @@ E:\Labs_02y_01s_OOP\Lab_05\Lab_05\obj\Debug\Lab_05.exe
 E:\Labs_02y_01s_OOP\Lab_05\Lab_05\obj\Debug\Lab_05.pdb
 E:\Labs_02y_01s_OOP\Lab_05\Lab_05\obj\Debug\Lab_05.Form1.resources
 E:\Labs_02y_01s_OOP\Lab_05\Lab_05\obj\Debug\Lab_05.csproj.GenerateResource.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_05\Lab_05\bin\Debug\Lab_05.exe.config
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_05\Lab_05\bin\Debug\Lab_05.exe
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_05\Lab_05\bin\Debug\Lab_05.pdb
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_05\Lab_05\obj\Debug\Lab_05.csproj.AssemblyReference.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_05\Lab_05\obj\Debug\Lab_05.csproj.SuggestedBindingRedirects.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_05\Lab_05\obj\Debug\Lab_05.Form1.resources
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_05\Lab_05\obj\Debug\Lab_05.csproj.GenerateResource.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_05\Lab_05\obj\Debug\Lab_05.csproj.CoreCompileInputs.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_05\Lab_05\obj\Debug\Lab_05.exe
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_05\Lab_05\obj\Debug\Lab_05.pdb

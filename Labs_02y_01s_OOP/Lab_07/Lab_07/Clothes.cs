@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab_07
 {
-    internal class Clothes : Program
+    internal class Clothes 
     {
         public ClothesColor ClothesColor = new ClothesColor();
         public FabricType FabricType = new FabricType();
@@ -21,6 +21,14 @@ namespace Lab_07
             width = Width;
             fabricType = FabricType;
             clothesColor = ClothesColor;
+        }
+
+        Clothes item1;
+        Clothes item2;
+        public Clothes(Clothes item1,Clothes item2)
+        {
+            this.item1 = item1;
+            this.item2 = item2;
         }
     }
 }
