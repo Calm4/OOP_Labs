@@ -14,3 +14,11 @@ E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.csproj
 E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.csproj.CoreCompileInputs.cache
 E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.exe
 E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.pdb
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\bin\Debug\Lab_01.exe.config
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\bin\Debug\Lab_01.exe
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\bin\Debug\Lab_01.pdb
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.csproj.AssemblyReference.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.csproj.SuggestedBindingRedirects.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.csproj.CoreCompileInputs.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.exe
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_01\Lab_01\obj\Debug\Lab_01.pdb

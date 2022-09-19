@@ -11,6 +11,8 @@ namespace Lab_01
         static void Main(string[] args)
         {
             Trapezoid trapezoid = new Trapezoid();
+            double checkX;
+            double checkY;
 
 
             byte choiceMenuPunct = 0;
@@ -55,8 +57,6 @@ namespace Lab_01
                         trapezoid.Y_rb = Convert.ToInt32(Console.ReadLine());
 
 
-                        double checkX;
-                        double checkY;
 
                         Console.ReadKey();
                         Console.Clear();
@@ -108,5 +108,5 @@ namespace Lab_01
 
         }
     }
-    
+
 }
