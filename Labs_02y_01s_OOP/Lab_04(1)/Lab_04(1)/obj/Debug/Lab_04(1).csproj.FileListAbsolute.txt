@@ -1,8 +1,0 @@
-E:\Программирование\C#\Lab_04(1)\Lab_04(1)\bin\Debug\Lab_04(1).exe.config
-E:\Программирование\C#\Lab_04(1)\Lab_04(1)\bin\Debug\Lab_04(1).exe
-E:\Программирование\C#\Lab_04(1)\Lab_04(1)\bin\Debug\Lab_04(1).pdb
-E:\Программирование\C#\Lab_04(1)\Lab_04(1)\obj\Debug\Lab_04(1).csproj.AssemblyReference.cache
-E:\Программирование\C#\Lab_04(1)\Lab_04(1)\obj\Debug\Lab_04(1).csproj.SuggestedBindingRedirects.cache
-E:\Программирование\C#\Lab_04(1)\Lab_04(1)\obj\Debug\Lab_04(1).csproj.CoreCompileInputs.cache
-E:\Программирование\C#\Lab_04(1)\Lab_04(1)\obj\Debug\Lab_04(1).exe
-E:\Программирование\C#\Lab_04(1)\Lab_04(1)\obj\Debug\Lab_04(1).pdb
