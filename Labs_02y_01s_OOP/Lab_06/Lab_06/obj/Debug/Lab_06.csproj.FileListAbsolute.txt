@@ -1,0 +1,8 @@
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06\bin\Debug\Lab_06.exe.config
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06\bin\Debug\Lab_06.exe
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06\bin\Debug\Lab_06.pdb
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06\obj\Debug\Lab_06.csproj.AssemblyReference.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06\obj\Debug\Lab_06.csproj.SuggestedBindingRedirects.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06\obj\Debug\Lab_06.csproj.CoreCompileInputs.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06\obj\Debug\Lab_06.exe
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06\obj\Debug\Lab_06.pdb
