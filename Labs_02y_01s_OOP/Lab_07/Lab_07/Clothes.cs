@@ -14,21 +14,16 @@ namespace Lab_07
         public int Width { get; set; }
         public string[] Gender = new string[2] {"Male","Female"}; 
 
-        public Clothes(string[] gender,int growth,int width,FabricType fabricType, ClothesColor clothesColor)
+        /*public Clothes(string[] gender,int growth,int width,FabricType fabricType, ClothesColor clothesColor)
         {
             gender = Gender;
             growth = Growth;
             width = Width;
             fabricType = FabricType;
             clothesColor = ClothesColor;
-        }
+        }*/
 
-        Clothes item1;
-        Clothes item2;
-        public Clothes(Clothes item1,Clothes item2)
-        {
-            this.item1 = item1;
-            this.item2 = item2;
-        }
+       
+       
     }
 }

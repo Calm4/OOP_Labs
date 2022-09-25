@@ -11,6 +11,7 @@ namespace Lab_03
         static void Main(string[] args)
         {
             // СДЕЛАТЬ МЕНЮ ЧЕРЕЗ SWITCH CASE С ПУНКТАМИ ЛАБ РАБОТЫ 
+            // OneDimensionalArray - Одномерный массив
             OneDimensionalArray array1 = new OneDimensionalArray(2, 2);
             OneDimensionalArray array2 = new OneDimensionalArray(3, 3);
             OneDimensionalArray array3 = new OneDimensionalArray(4, 4);

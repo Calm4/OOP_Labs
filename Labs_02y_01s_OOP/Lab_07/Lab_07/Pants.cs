@@ -9,8 +9,6 @@ namespace Lab_07
 {
     internal class Pants : Clothes
     {
-        public Pants(string[] gender, int growth, int width, FabricType fabricType, ClothesColor clothesColor) : base(gender, growth, width, fabricType, clothesColor)
-        {
-        }
+       
     }
 }

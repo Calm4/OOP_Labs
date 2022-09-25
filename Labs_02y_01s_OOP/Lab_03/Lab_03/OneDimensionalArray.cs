@@ -111,7 +111,7 @@ namespace Lab_03
 
         }
 
-        // Умножение массива на число ( Как сделать умножение числа на массив?)
+        // Умножение массива на число ( Как сделать умножение числа на массив?, просто поэлементно умножить массив на число?)
         public static OneDimensionalArray operator -(OneDimensionalArray a1)
         {
             OneDimensionalArray rez = new OneDimensionalArray(a1.ArrayLength, a1.ArrayLength);
