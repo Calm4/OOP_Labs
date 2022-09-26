@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Blazer.cs" />
     <Compile Include="Clothes.cs" />
     <Compile Include="Costume.cs" />
-    <Compile Include="Jacket.cs" />
     <Compile Include="Pants.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

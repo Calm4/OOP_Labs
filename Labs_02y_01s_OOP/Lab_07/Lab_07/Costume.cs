@@ -9,7 +9,7 @@ namespace Lab_07
 {
     internal class Costume : Clothes
     {
-<<<<<<< HEAD
+
         public Pants Pants { get; set; }
         public Blazer Blazer { get; set; }
         public Skirts Skirt { get; set; }
@@ -65,8 +65,6 @@ namespace Lab_07
                 Console.WriteLine("=================================================");
             }
         }
-=======
-       
->>>>>>> b6417ed17402e148b0db5026411e9b33823085c5
+
     }
 }

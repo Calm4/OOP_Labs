@@ -11,7 +11,7 @@ namespace Lab_07
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
+
 
             Pants[] pants =
             {
@@ -371,10 +371,6 @@ namespace Lab_07
 
 
 
-=======
-           
-            
->>>>>>> b6417ed17402e148b0db5026411e9b33823085c5
         }
     }
 
