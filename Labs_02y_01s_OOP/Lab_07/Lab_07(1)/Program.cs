@@ -86,45 +86,15 @@ namespace Lab_07
                         break;
                     case 2:
                         Console.WriteLine("Весь ассортимент ЮБОК");
-                        for (int i = 0; i < skirts.Length; i++)
-                        {
-                            Console.WriteLine($"Юбка №{i + 1}");
-                            Console.WriteLine("Часть костюма:\t" + "Юбка : " + skirts[i].GetType());
-                            Console.WriteLine("Пол:\t\t" + skirts[i].Gender);
-                            Console.WriteLine("Рост:\t\t" + skirts[i].Growth);
-                            Console.WriteLine("Тип ткани:\t" + skirts[i].Type);
-                            Console.WriteLine("Цвет вещи:\t" + skirts[i].Color);
-                        }
-                        Console.ReadKey();
-                        Console.Clear();
+                        Skirts.ShowSkirt(skirts);
                         break;
                     case 3:
                         Console.WriteLine("Весь ассортимент ПИДЖАКОВ");
-                        for (int i = 0; i < blazers.Length; i++)
-                        {
-                            Console.WriteLine($"Пиджак №{i + 1}");
-                            Console.WriteLine("Часть костюма:\t" + "Пиджак : " + blazers[i].GetType());
-                            Console.WriteLine("Пол:\t\t" + blazers[i].Gender);
-                            Console.WriteLine("Рост:\t\t" + blazers[i].Growth);
-                            Console.WriteLine("Тип ткани:\t" + blazers[i].Type);
-                            Console.WriteLine("Цвет вещи:\t" + blazers[i].Color);
-                        }
-                        Console.ReadKey();
-                        Console.Clear();
+                        Blazer.ShowBlazers(blazers);
                         break;
                     case 4:
                         Console.WriteLine("Весь ассортимент БРЮК");
-                        for (int i = 0; i < blazers.Length; i++)
-                        {
-                            Console.WriteLine($"Брюки №{i + 1}");
-                            Console.WriteLine("Часть костюма:\t" + "Брюки : " + pants[i].GetType());
-                            Console.WriteLine("Пол:\t\t" + pants[i].Gender);
-                            Console.WriteLine("Рост:\t\t" + pants[i].Growth);
-                            Console.WriteLine("Тип ткани:\t" + pants[i].Type);
-                            Console.WriteLine("Цвет вещи:\t" + pants[i].Color);
-                        }
-                        Console.ReadKey();
-                        Console.Clear();
+                        Pants.ShowPants(pants);
                         break;
                     case 5:
                         Console.WriteLine("1)Мужские косnюмы");
@@ -137,19 +107,7 @@ namespace Lab_07
                             {
                                 if (costumesWithPants[i].Pants.Gender == Gender.Man)
                                 {
-                                    Console.WriteLine($"Costume №{i + 1}");
-                                    Console.WriteLine("Часть костюма:\t" + "Брюки : " + costumesWithPants[i].Pants.GetType());
-                                    Console.WriteLine("Пол:\t\t" + costumesWithPants[i].Pants.Gender);
-                                    Console.WriteLine("Рост:\t\t" + costumesWithPants[i].Pants.Growth);
-                                    Console.WriteLine("Тип ткани:\t" + costumesWithPants[i].Pants.Type);
-                                    Console.WriteLine("Цвет вещи:\t" + costumesWithPants[i].Pants.Color);
-                                    Console.WriteLine("=========================");
-                                    Console.WriteLine("Часть костюма:\t" + "Пиджак : " + costumesWithPants[i].Blazer.GetType());
-                                    Console.WriteLine("Пол:\t\t" + costumesWithPants[i].Blazer.Gender);
-                                    Console.WriteLine("Рост:\t\t" + costumesWithPants[i].Blazer.Growth);
-                                    Console.WriteLine("Тип ткани:\t" + costumesWithPants[i].Blazer.Type);
-                                    Console.WriteLine("Цвет вещи:\t" + costumesWithPants[i].Blazer.Color);
-                                    Console.WriteLine("=================================================");
+                                    Costume.ShowCostumeWithPants(costumesWithPants);
                                 }
 
                             }
@@ -157,19 +115,7 @@ namespace Lab_07
                             {
                                 if (costumesWithSkirts[i].Skirt.Gender == Gender.Man)
                                 {
-                                    Console.WriteLine($"Costume №{i + costumesWithSkirts.Length + 1}");
-                                    Console.WriteLine("Часть костюма:\t" + "Юбка : " + costumesWithSkirts[i].Skirt.GetType());
-                                    Console.WriteLine("Пол:\t\t" + costumesWithSkirts[i].Skirt.Gender);
-                                    Console.WriteLine("Рост:\t\t" + costumesWithSkirts[i].Skirt.Growth);
-                                    Console.WriteLine("Тип ткани:\t" + costumesWithSkirts[i].Skirt.Type);
-                                    Console.WriteLine("Цвет вещи:\t" + costumesWithSkirts[i].Skirt.Color);
-                                    Console.WriteLine("=========================");
-                                    Console.WriteLine("Часть костюма:\t" + "Пиджак : " + costumesWithSkirts[i].Blazer.GetType());
-                                    Console.WriteLine("Пол:\t\t" + costumesWithSkirts[i].Blazer.Gender);
-                                    Console.WriteLine("Рост:\t\t" + costumesWithSkirts[i].Blazer.Growth);
-                                    Console.WriteLine("Тип ткани:\t" + costumesWithSkirts[i].Blazer.Type);
-                                    Console.WriteLine("Цвет вещи:\t" + costumesWithSkirts[i].Blazer.Color);
-                                    Console.WriteLine("=================================================");
+                                    Costume.ShowCostumeWithSkirts(costumesWithSkirts);
                                 }
                             }
                         }
@@ -179,19 +125,7 @@ namespace Lab_07
                             {
                                 if (costumesWithPants[i].Pants.Gender == Gender.Woman)
                                 {
-                                    Console.WriteLine($"Costume №{i + 1}");
-                                    Console.WriteLine("Часть костюма:\t" + "Брюки : " + costumesWithPants[i].Pants.GetType());
-                                    Console.WriteLine("Пол:\t\t" + costumesWithPants[i].Pants.Gender);
-                                    Console.WriteLine("Рост:\t\t" + costumesWithPants[i].Pants.Growth);
-                                    Console.WriteLine("Тип ткани:\t" + costumesWithPants[i].Pants.Type);
-                                    Console.WriteLine("Цвет вещи:\t" + costumesWithPants[i].Pants.Color);
-                                    Console.WriteLine("=========================");
-                                    Console.WriteLine("Часть костюма:\t" + "Пиджак : " + costumesWithPants[i].Blazer.GetType());
-                                    Console.WriteLine("Пол:\t\t" + costumesWithPants[i].Blazer.Gender);
-                                    Console.WriteLine("Рост:\t\t" + costumesWithPants[i].Blazer.Growth);
-                                    Console.WriteLine("Тип ткани:\t" + costumesWithPants[i].Blazer.Type);
-                                    Console.WriteLine("Цвет вещи:\t" + costumesWithPants[i].Blazer.Color);
-                                    Console.WriteLine("=================================================");
+                                    Costume.ShowCostumeWithPants(costumesWithPants);
                                 }
 
                             }
@@ -199,19 +133,7 @@ namespace Lab_07
                             {
                                 if (costumesWithSkirts[i].Skirt.Gender == Gender.Woman)
                                 {
-                                    Console.WriteLine($"Costume №{i + costumesWithSkirts.Length + 1}");
-                                    Console.WriteLine("Часть костюма:\t" + "Юбка : " + costumesWithSkirts[i].Skirt.GetType());
-                                    Console.WriteLine("Пол:\t\t" + costumesWithSkirts[i].Skirt.Gender);
-                                    Console.WriteLine("Рост:\t\t" + costumesWithSkirts[i].Skirt.Growth);
-                                    Console.WriteLine("Тип ткани:\t" + costumesWithSkirts[i].Skirt.Type);
-                                    Console.WriteLine("Цвет вещи:\t" + costumesWithSkirts[i].Skirt.Color);
-                                    Console.WriteLine("=========================");
-                                    Console.WriteLine("Часть костюма:\t" + "Пиджак : " + costumesWithSkirts[i].Blazer.GetType());
-                                    Console.WriteLine("Пол:\t\t" + costumesWithSkirts[i].Blazer.Gender);
-                                    Console.WriteLine("Рост:\t\t" + costumesWithSkirts[i].Blazer.Growth);
-                                    Console.WriteLine("Тип ткани:\t" + costumesWithSkirts[i].Blazer.Type);
-                                    Console.WriteLine("Цвет вещи:\t" + costumesWithSkirts[i].Blazer.Color);
-                                    Console.WriteLine("=================================================");
+                                    Costume.ShowCostumeWithSkirts(costumesWithSkirts);
                                 }
                             }
                         }
@@ -221,24 +143,9 @@ namespace Lab_07
                             {
                                 if ((costumesWithPants[i].Pants.Gender == Gender.Woman))
                                 {
-
-                                    Console.WriteLine($"Costume №{i + 1}");
-                                    Console.WriteLine("Часть костюма:\t" + "Брюки : " + costumesWithPants[i].Pants.GetType());
-                                    Console.WriteLine("Пол:\t\t" + costumesWithPants[i].Pants.Gender);
-                                    Console.WriteLine("Рост:\t\t" + costumesWithPants[i].Pants.Growth);
-                                    Console.WriteLine("Тип ткани:\t" + costumesWithPants[i].Pants.Type);
-                                    Console.WriteLine("Цвет вещи:\t" + costumesWithPants[i].Pants.Color);
-                                    Console.WriteLine("=========================");
-                                    Console.WriteLine("Часть костюма:\t" + "Пиджак : " + costumesWithPants[i].Blazer.GetType());
-                                    Console.WriteLine("Пол:\t\t" + costumesWithPants[i].Blazer.Gender);
-                                    Console.WriteLine("Рост:\t\t" + costumesWithPants[i].Blazer.Growth);
-                                    Console.WriteLine("Тип ткани:\t" + costumesWithPants[i].Blazer.Type);
-                                    Console.WriteLine("Цвет вещи:\t" + costumesWithPants[i].Blazer.Color);
-                                    Console.WriteLine("=================================================");
+                                    Costume.ShowCostumeWithPants(costumesWithPants);
                                 }
                             }
-
-
                         }
                         else
                         {
@@ -252,111 +159,21 @@ namespace Lab_07
                         {
                             if (pants[i].Color == Color.Red)
                             {
-                                Console.WriteLine($"Брюки №{i + 1}");
-                                Console.WriteLine("Часть костюма:\t" + "Брюки : " + pants[i].GetType());
-                                Console.WriteLine("Пол:\t\t" + pants[i].Gender);
-                                Console.WriteLine("Рост:\t\t" + pants[i].Growth);
-                                Console.WriteLine("Тип ткани:\t" + pants[i].Type);
-                                Console.WriteLine("Цвет вещи:\t" + pants[i].Color);
+                                Pants.ShowPants(pants);
                             }
                         }
                         for (int i = 0; i < costumesWithPants.Length; i++)
                         {
                             if (costumesWithPants[i].Pants.Color == Color.Red)
                             {
-                                Console.WriteLine($"Costume №{i + 1}");
-                                Console.WriteLine("Часть костюма:\t" + "Брюки : " + costumesWithPants[i].Pants.GetType());
-                                Console.WriteLine("Пол:\t\t" + costumesWithPants[i].Pants.Gender);
-                                Console.WriteLine("Рост:\t\t" + costumesWithPants[i].Pants.Growth);
-                                Console.WriteLine("Тип ткани:\t" + costumesWithPants[i].Pants.Type);
-                                Console.WriteLine("Цвет вещи:\t" + costumesWithPants[i].Pants.Color);
-                                Console.WriteLine("=========================");
-                                Console.WriteLine("Часть костюма:\t" + "Пиджак : " + costumesWithPants[i].Blazer.GetType());
-                                Console.WriteLine("Пол:\t\t" + costumesWithPants[i].Blazer.Gender);
-                                Console.WriteLine("Рост:\t\t" + costumesWithPants[i].Blazer.Growth);
-                                Console.WriteLine("Тип ткани:\t" + costumesWithPants[i].Blazer.Type);
-                                Console.WriteLine("Цвет вещи:\t" + costumesWithPants[i].Blazer.Color);
-                                Console.WriteLine("=================================================");
+                                Costume.ShowCostumeWithPants(costumesWithPants);
                             }
                         }
                         Console.ReadKey();
                         Console.Clear();
                         break;
                     case 7:
-                        int pantsCountMan = 0;
-                        int skirtsCountMan = 0;
-                        int blazersCountMan = 0;
-
-                        int pantsCountWoMan = 0;
-                        int skirtsCountWoMan = 0;
-                        int blazersCountWoMan = 0;
-                        for (int i = 0; i < pants.Length; i++)
-                        {
-                            if (pants[i].Gender == Gender.Man)
-                            {
-                                pantsCountMan++;
-                            }
-                            if (pants[i].Gender == Gender.Woman)
-                            {
-                                pantsCountWoMan++;
-                            }
-                        }
-                        for (int i = 0; i < skirts.Length; i++)
-                        {
-                            if (skirts[i].Gender == Gender.Man)
-                            {
-                                skirtsCountMan++;
-                            }
-                            if (pants[i].Gender == Gender.Woman)
-                            {
-                                skirtsCountWoMan++;
-                            }
-                        }
-                        for (int i = 0; i < blazers.Length; i++)
-                        {
-                            if (blazers[i].Gender == Gender.Man)
-                            {
-                                blazersCountMan++;
-                            }
-                            if (blazers[i].Gender == Gender.Woman)
-                            {
-                                blazersCountWoMan++;
-                            }
-                        }
-                        for (int i = 0; i < costumesWithPants.Length; i++)
-                        {
-                            if (costumesWithPants[i].Pants.Gender == Gender.Man)
-                            {
-                                pantsCountMan++;
-                                blazersCountMan++;
-                            }
-                            if (costumesWithPants[i].Pants.Gender == Gender.Woman)
-                            {
-                                pantsCountWoMan++;
-                                blazersCountWoMan++;
-                            }
-                        }
-                        for (int i = 0; i < costumesWithSkirts.Length; i++)
-                        {
-                            if (costumesWithSkirts[i].Skirt.Gender == Gender.Man)
-                            {
-                                skirtsCountMan++;
-                                blazersCountMan++;
-                            }
-                            if (costumesWithSkirts[i].Skirt.Gender == Gender.Woman)
-                            {
-                                skirtsCountWoMan++;
-                                blazersCountWoMan++;
-                            }
-                        }
-                        Console.WriteLine($"Кол-во мужских ЮБОК: {skirtsCountMan}");
-                        Console.WriteLine($"Кол-во женских ЮБОК: {skirtsCountWoMan}");
-                        Console.WriteLine($"Кол-во мужских БРЮК: {skirtsCountMan}");
-                        Console.WriteLine($"Кол-во женских БРЮК: {skirtsCountWoMan}");
-                        Console.WriteLine($"Кол-во мужских ПИДЖАКОВ: {blazersCountMan}");
-                        Console.WriteLine($"Кол-во женских ПИДЖАКОВ: {blazersCountWoMan}");
-                        Console.ReadKey();
-                        Console.Clear();
+                        Costume.ShowClothesAssortment(pants, skirts, blazers, costumesWithPants, costumesWithSkirts);
                         break;
                     case 8:
                         isWork = false;
@@ -364,24 +181,14 @@ namespace Lab_07
                     default:
                         Console.Clear();
                         continue;
-
-
                 }
             }
-
-
-
         }
     }
-
-
-
-
     enum Gender
     {
         Man,
         Woman
-        // Boolean - true/false true-man ; false-woman =)
     }
     enum Color
     {
