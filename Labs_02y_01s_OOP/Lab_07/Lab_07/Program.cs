@@ -29,7 +29,7 @@ namespace Lab_07
             };
             Blazer[] blazers =
             {
-                new Blazer(Gender.Man, 180, Type_clothes.Leather, Color.Blue),
+                new Blazer(Gender.Man, 180, Type_clothes.Leather, Color.Blue), 
                 new Blazer(Gender.Man, 190, Type_clothes.Leather, Color.Red),
                 new Blazer(Gender.Woman, 160, Type_clothes.Leather, Color.Red),
                 new Blazer(Gender.Woman, 170, Type_clothes.Leather, Color.Black),
