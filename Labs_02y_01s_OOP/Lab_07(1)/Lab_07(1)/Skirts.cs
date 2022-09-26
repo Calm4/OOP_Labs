@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab_07_1_
+namespace Lab_07
 {
     internal class Skirts : Costume
     {
