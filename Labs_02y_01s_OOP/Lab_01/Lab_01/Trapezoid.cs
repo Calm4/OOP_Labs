@@ -26,7 +26,7 @@ namespace Lab_01
 
 
 
-        public void isExists()
+        public void DoesExists()
         {
             if (((X_lt == X_rt) && (Y_lt == Y_rt)) || ((X_lt == X_lb) && (Y_lt == Y_lb)) || ((X_lt == X_rb) && (Y_lt == Y_rb)) || ((X_rt == X_lb) && (Y_rt == Y_lb)) || ((X_rt == X_rb) && (Y_rt == Y_rb)) || ((X_lb == X_rb) && (Y_lb == Y_rb)))
             {
@@ -136,3 +136,4 @@ namespace Lab_01
 
     }
 }
+ 

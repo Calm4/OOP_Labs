@@ -8,6 +8,8 @@ namespace Lab_02_2_
 {
     internal class Vector
     {
+        
+        
         public double VectorX { get; set; }
         public double VectorY { get; set; }
         public double VectorZ { get; set; }  

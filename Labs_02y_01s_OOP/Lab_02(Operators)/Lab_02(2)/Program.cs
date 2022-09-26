@@ -34,8 +34,8 @@ namespace Lab_02_2_
                 Console.WriteLine("====================");
                 Console.Write("Введите пункт меню: ");
 
-                Console.ReadKey();
                 choice = Convert.ToInt32(Console.ReadLine());
+                Console.ReadKey();
                 switch (choice)
                 {
                     case 1:

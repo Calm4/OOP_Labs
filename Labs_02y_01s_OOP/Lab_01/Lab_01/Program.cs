@@ -34,7 +34,7 @@ namespace Lab_01
                     case 1:
                         Console.WriteLine("Введите координату X левой верхней вершины");
                         trapezoid.X_lt = Convert.ToInt32(Console.ReadLine());
-
+                        
                         Console.WriteLine("Введите координату Y левой верхней вершины");
                         trapezoid.Y_lt = Convert.ToInt32(Console.ReadLine());
 
@@ -62,7 +62,7 @@ namespace Lab_01
                         Console.Clear();
                         break;
                     case 2:
-                        trapezoid.isExists();
+                        trapezoid.DoesExists();
                         Console.ReadKey();
                         Console.Clear();
                         break;

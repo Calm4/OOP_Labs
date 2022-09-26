@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab_07
 {
-    internal class Pants : Costume
+    internal class Blazer : Costume
     {
-        public Pants(Gender gender, double growth, Type_clothes type, Color color) : base(gender, growth, type, color)
+        public Blazer(Gender gender, double growth, Type_clothes type, Color color) : base(gender, growth, type, color)
         {
         }
     }
