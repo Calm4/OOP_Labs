@@ -31,9 +31,7 @@ namespace Lab_03_Task_2_
             {
                 SumA = A.Sum();
                 SumB = B.Sum();
-                Console.WriteLine(A.Sum());
-                Console.WriteLine(B.Sum());
-                Console.ReadKey();
+
                 D = 5 * A;
                 E = 2 * B;
                 F = -A;
@@ -69,7 +67,6 @@ namespace Lab_03_Task_2_
                         {
                             case 1:
                                 A.InputArray();
-
                                 break;
                             case 2:
                                 B.InputArray();
@@ -107,13 +104,13 @@ namespace Lab_03_Task_2_
                         }
                         break;
                     case 3:
-                        Console.Write("Сумма |5*A + C|: ");
+                        Console.Write("Сумма отрицательных элементов |5*A + C|: ");
                         int Sum1 = D.Sum() + C.Sum();
                         Console.WriteLine(Sum1);
                         Console.ReadKey();
                         break;
                     case 4:
-                        Console.Write("Сумма |2*B + (-A) + C*4|: ");
+                        Console.Write("Сумма отрицательных элементов |2*B + (-A) + C*4|: ");
                         int Sum2 = E.Sum() + F.Sum() + G.Sum();
                         Console.WriteLine(Sum2);
                         Console.ReadKey();
@@ -149,7 +146,7 @@ namespace Lab_03_Task_2_
 
         }
     }
-    
+
 
 }
 

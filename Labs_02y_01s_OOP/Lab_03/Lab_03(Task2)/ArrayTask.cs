@@ -9,7 +9,7 @@ namespace Lab_03_Task_2_
     class ArrayTask
     {
         public int Length { get { return _array.Length; } }
-        public static int counter = 1;
+
         private int[] _array;
         public ArrayTask(int length) => _array = new int[length];
 
@@ -58,10 +58,18 @@ namespace Lab_03_Task_2_
         public static ArrayTask operator +(ArrayTask array1, ArrayTask array2)
         {
             int Length1, Length2, k;
+
             if (array1.Length > array2.Length)
-            { Length1 = array1.Length; Length2 = array2.Length; k = 1; }
-            else { Length1 = array2.Length; Length2 = array1.Length; k = 2; }
+            {
+                Length1 = array1.Length; Length2 = array2.Length; k = 1;
+            }
+            else
+            {
+                Length1 = array2.Length; Length2 = array1.Length; k = 2;
+            }
+
             ArrayTask TemporaryArray = new ArrayTask(Length1);
+
             for (int i = 0; i < Length1; ++i)
             {
                 if (i < Length2) TemporaryArray[i] = array1[i] + array2[i];

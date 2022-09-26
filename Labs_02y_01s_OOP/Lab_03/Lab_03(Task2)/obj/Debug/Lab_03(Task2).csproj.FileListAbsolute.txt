@@ -1,0 +1,8 @@
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_03\Lab_03(Task2)\bin\Debug\Lab_03(Task2).exe.config
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_03\Lab_03(Task2)\bin\Debug\Lab_03(Task2).exe
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_03\Lab_03(Task2)\bin\Debug\Lab_03(Task2).pdb
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_03\Lab_03(Task2)\obj\Debug\Lab_03(Task2).csproj.AssemblyReference.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_03\Lab_03(Task2)\obj\Debug\Lab_03(Task2).csproj.SuggestedBindingRedirects.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_03\Lab_03(Task2)\obj\Debug\Lab_03(Task2).csproj.CoreCompileInputs.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_03\Lab_03(Task2)\obj\Debug\Lab_03(Task2).exe
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_03\Lab_03(Task2)\obj\Debug\Lab_03(Task2).pdb

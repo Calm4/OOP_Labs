@@ -9,6 +9,7 @@ namespace Lab_07
 {
     internal class Clothes
     {
+<<<<<<< HEAD
         public Gender Gender { get; set; }
         public double Growth { get; set; }
         public Type_clothes Type { get; set; }
@@ -33,5 +34,24 @@ namespace Lab_07
             Skirt = skirt;
             Blazer = blazer;
         }
+=======
+        public ClothesColor ClothesColor = new ClothesColor();
+        public FabricType FabricType = new FabricType();
+        public int Growth { get; set; }
+        public int Width { get; set; }
+        public string[] Gender = new string[2] {"Male","Female"}; 
+
+        /*public Clothes(string[] gender,int growth,int width,FabricType fabricType, ClothesColor clothesColor)
+        {
+            gender = Gender;
+            growth = Growth;
+            width = Width;
+            fabricType = FabricType;
+            clothesColor = ClothesColor;
+        }*/
+
+       
+       
+>>>>>>> b6417ed17402e148b0db5026411e9b33823085c5
     }
 }
