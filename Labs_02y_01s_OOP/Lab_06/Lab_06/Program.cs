@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LAB_06
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -35,7 +35,7 @@ namespace LAB_06
                 Console.WriteLine("1)Вывести список студентов и их оценки");
                 Console.WriteLine("2)Вывести по каждому предмету средний балл");
                 Console.WriteLine("3)Вывести по каждой студенческой группе средний балл на ссесии");
-                Console.WriteLine("4)Вывести количество студентов, получивших неудовлетворительные оценки, по указанному предмеиу");
+                Console.WriteLine("4)Вывести количество студентов, получивших неудовлетворительные оценки, по указанному предмету");
                 Console.WriteLine("5)Выход");
                 int punctOfMenu = Convert.ToInt32(Console.ReadLine());
                 switch (punctOfMenu)
@@ -70,14 +70,24 @@ namespace LAB_06
                     case 2:
                         for (int i = 0; i < Enum.GetNames(typeof(Subject)).Length; i++)
                         {
-                            Student.ShowAverageMarkSubject(student, subject[i], i);
+                            Console.WriteLine(Student.ShowAverageMarkSubject(student, subject[i], i));
                         }
                         break;
                     case 3:
-                        Student.ShowGroupAverageSsesionMark(student);
+                        for (int i = 0; i < Enum.GetNames(typeof(Group)).Length; i++)
+                        {
+                            Console.WriteLine(Student.ShowGroupAverageSsesionMark(student, i));
+
+                        }
                         break;
                     case 4:
-                        Student.ShowStudentsWithPoorMark(student, subject);
+
+                        for (int j = 0; j < Enum.GetNames(typeof(Subject)).Length; j++)
+                        {
+                            Console.WriteLine(Student.ShowStudentsWithPoorMark(student, subject, j));
+
+                        }
+
                         break;
                     case 5:
                         isWork = false;

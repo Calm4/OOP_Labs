@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LAB_06
 {
-    internal class Student
+    public class Student
     {
         static private int enumGroupCount = Enum.GetNames(typeof(Group)).Length;
         static private int enumSubjectCount = Enum.GetNames(typeof(Subject)).Length;
@@ -28,7 +28,7 @@ namespace LAB_06
 
         public Random random = new Random();
 
-        static public void ShowAverageMarkSubject(Student[] student, Subject subject, int index)
+        static public string ShowAverageMarkSubject(Student[] student, Subject subject, int index)
         {
             double sum = 0;
             double averageMarkSubject = 0;
@@ -37,10 +37,10 @@ namespace LAB_06
                 sum += (int)student[i].Subject[(int)subject];
             }
             averageMarkSubject = sum / student.Length;
-            Console.WriteLine(Enum.GetValues(typeof(Subject)).GetValue(index) + ": " + averageMarkSubject);
+            return Enum.GetValues(typeof(Subject)).GetValue(index) + ": " + averageMarkSubject;
 
         }
-        static public void ShowGroupAverageSsesionMark(Student[] student)
+        static public string ShowGroupAverageSsesionMark(Student[] student, int index)
         {
             double[] groupSumMark = new double[enumGroupCount];
             double[] groupAverageMark = new double[enumGroupCount];
@@ -60,30 +60,15 @@ namespace LAB_06
                     }
                 }
             }
-            /*for (int i = 0; i < student.Length; i++)
-            {
-                for (int j = 0; j < enumGroupCount; j++)
-                {
-                    if (student[i].Group == (Group)Enum.GetValues(typeof(Group)).GetValue(j))
-                    {
-                        for (int k = 0; k < enumSubjectCount; k++)
-                        {
-                            studentsInOneGroup[k]++;
-                            groupSumMark[k] += (double)student[i].Subject[k];
-                        }
-                    }
-                }
-            }*/
             for (int i = 0; i < enumGroupCount; i++)
             {
                 groupAverageMark[i] = groupSumMark[i] / studentsInOneGroup[i];
             }
-            for (int i = 0; i < groupAverageMark.Length; i++)
-            {
-                Console.WriteLine(Enum.GetValues(typeof(Group)).GetValue(i) + ": " + groupAverageMark[i]);
-            }
+
+            return Enum.GetValues(typeof(Group)).GetValue(index) + ": " + groupAverageMark[index];
+
         }
-        static public void ShowStudentsWithPoorMark(Student[] student, Subject[] subject)
+        static public string ShowStudentsWithPoorMark(Student[] student, Subject[] subject, int indexI)
         {
             int[] studentsCount = new int[enumSubjectCount];
 
@@ -99,39 +84,33 @@ namespace LAB_06
                 }
             }
             Console.WriteLine();
-            for (int i = 0; i < enumSubjectCount; i++)
-            {
-                Console.WriteLine($"Количество студентов получивших неудовлетворительную оценку по предмету {Enum.GetValues(typeof(Subject)).GetValue(i)}: {studentsCount[i]}");
 
-            }
-            Console.WriteLine();
-            for (int i = 0; i < student.Length; i++)
-            {
 
-                for (int j = 0; j < enumSubjectCount; j++)
-                {
-                    Console.Write($"{Enum.GetValues(typeof(Subject)).GetValue(j)}({i + 1})" + ": " + (int)student[i].Subject[j] + "\t");
+            return $"Количество студентов получивших неудовлетворительную оценку по предмету {Enum.GetValues(typeof(Subject)).GetValue(indexI)}: {studentsCount[indexI]}";
 
-                }
-                Console.WriteLine();
-            }
+          
+
+            //return $"{Enum.GetValues(typeof(Subject)).GetValue(indexJ)}({indexI + 1})" + ": " + (int)student[indexI].Subject[indexJ] + "\t";
+
         }
 
     }
 
-    enum Subject
-    {
-        Math,
-        History,
-        English,
-        OOP,
-    }
-    enum Group
-    {
-        ITI_21,
-        ITI_22,
-        ITP_21,
-        ITP_22,
-    }
 }
+
+public enum Subject
+{
+    Math,
+    History,
+    English,
+    OOP,
+}
+public enum Group
+{
+    ITI_21,
+    ITI_22,
+    ITP_21,
+    ITP_22,
+}
+
 

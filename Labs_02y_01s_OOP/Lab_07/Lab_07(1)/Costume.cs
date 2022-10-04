@@ -65,6 +65,83 @@ namespace Lab_07
                 Console.WriteLine("=================================================");
             }
         }
+        static public void ShowClothesAssortment(Pants[] pants,Skirts[] skirts,Blazer[] blazers,Costume[] costumesWithPants,Costume[] costumesWithSkirts)
+        {
+            int pantsCountMan = 0;
+            int skirtsCountMan = 0;
+            int blazersCountMan = 0;
+
+            int pantsCountWoMan = 0;
+            int skirtsCountWoMan = 0;
+            int blazersCountWoMan = 0;
+            for (int i = 0; i < pants.Length; i++)
+            {
+                if (pants[i].Gender == Gender.Man)
+                {
+                    pantsCountMan++;
+                }
+                if (pants[i].Gender == Gender.Woman)
+                {
+                    pantsCountWoMan++;
+                }
+            }
+            for (int i = 0; i < skirts.Length; i++)
+            {
+                if (skirts[i].Gender == Gender.Man)
+                {
+                    skirtsCountMan++;
+                }
+                if (pants[i].Gender == Gender.Woman)
+                {
+                    skirtsCountWoMan++;
+                }
+            }
+            for (int i = 0; i < blazers.Length; i++)
+            {
+                if (blazers[i].Gender == Gender.Man)
+                {
+                    blazersCountMan++;
+                }
+                if (blazers[i].Gender == Gender.Woman)
+                {
+                    blazersCountWoMan++;
+                }
+            }
+            for (int i = 0; i < costumesWithPants.Length; i++)
+            {
+                if (costumesWithPants[i].Pants.Gender == Gender.Man)
+                {
+                    pantsCountMan++;
+                    blazersCountMan++;
+                }
+                if (costumesWithPants[i].Pants.Gender == Gender.Woman)
+                {
+                    pantsCountWoMan++;
+                    blazersCountWoMan++;
+                }
+            }
+            for (int i = 0; i < costumesWithSkirts.Length; i++)
+            {
+                if (costumesWithSkirts[i].Skirt.Gender == Gender.Man)
+                {
+                    skirtsCountMan++;
+                    blazersCountMan++;
+                }
+                if (costumesWithSkirts[i].Skirt.Gender == Gender.Woman)
+                {
+                    skirtsCountWoMan++;
+                    blazersCountWoMan++;
+                }
+            }
+            Console.WriteLine($"Кол-во мужских ЮБОК: {skirtsCountMan}");
+            Console.WriteLine($"Кол-во женских ЮБОК: {skirtsCountWoMan}");
+            Console.WriteLine($"Кол-во мужских БРЮК: {skirtsCountMan}");
+            Console.WriteLine($"Кол-во женских БРЮК: {skirtsCountWoMan}");
+            Console.WriteLine($"Кол-во мужских ПИДЖАКОВ: {blazersCountMan}");
+            Console.WriteLine($"Кол-во женских ПИДЖАКОВ: {blazersCountWoMan}");
+            Console.ReadKey();
+            Console.Clear();
+        }
 
     }
 }

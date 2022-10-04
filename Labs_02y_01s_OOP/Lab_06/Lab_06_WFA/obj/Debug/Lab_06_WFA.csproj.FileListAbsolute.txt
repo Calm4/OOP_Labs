@@ -1,0 +1,15 @@
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\bin\Debug\Lab_06_WFA.exe.config
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\bin\Debug\Lab_06_WFA.exe
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\bin\Debug\Lab_06_WFA.pdb
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\obj\Debug\Lab_06_WFA.csproj.AssemblyReference.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\obj\Debug\Lab_06_WFA.csproj.SuggestedBindingRedirects.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\obj\Debug\Lab_06_WFA.Form1.resources
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\obj\Debug\Lab_06_WFA.Properties.Resources.resources
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\obj\Debug\Lab_06_WFA.csproj.GenerateResource.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\obj\Debug\Lab_06_WFA.csproj.CoreCompileInputs.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\obj\Debug\Lab_06_WFA.exe
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\obj\Debug\Lab_06_WFA.pdb
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\bin\Debug\Lab_06.exe
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\bin\Debug\Lab_06.pdb
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\bin\Debug\Lab_06.exe.config
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_06\Lab_06_WFA\obj\Debug\Lab_06_WFA.csproj.CopyComplete

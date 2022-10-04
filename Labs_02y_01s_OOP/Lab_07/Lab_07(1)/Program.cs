@@ -106,17 +106,15 @@ namespace Lab_07
                             for (int i = 0; i < costumesWithPants.Length; i++)
                             {
                                 if (costumesWithPants[i].Pants.Gender == Gender.Man)
-                                {
                                     Costume.ShowCostumeWithPants(costumesWithPants);
-                                }
+
 
                             }
                             for (int i = 0; i < costumesWithSkirts.Length; i++)
                             {
                                 if (costumesWithSkirts[i].Skirt.Gender == Gender.Man)
-                                {
                                     Costume.ShowCostumeWithSkirts(costumesWithSkirts);
-                                }
+
                             }
                         }
                         else if (whichGenderCostume == 2)
@@ -124,17 +122,15 @@ namespace Lab_07
                             for (int i = 0; i < costumesWithPants.Length; i++)
                             {
                                 if (costumesWithPants[i].Pants.Gender == Gender.Woman)
-                                {
                                     Costume.ShowCostumeWithPants(costumesWithPants);
-                                }
+
 
                             }
                             for (int i = 0; i < costumesWithSkirts.Length; i++)
                             {
                                 if (costumesWithSkirts[i].Skirt.Gender == Gender.Woman)
-                                {
                                     Costume.ShowCostumeWithSkirts(costumesWithSkirts);
-                                }
+
                             }
                         }
                         else if (whichGenderCostume == 3)
@@ -142,9 +138,8 @@ namespace Lab_07
                             for (int i = 0; i < costumesWithPants.Length; i++)
                             {
                                 if ((costumesWithPants[i].Pants.Gender == Gender.Woman))
-                                {
                                     Costume.ShowCostumeWithPants(costumesWithPants);
-                                }
+
                             }
                         }
                         else
@@ -158,16 +153,14 @@ namespace Lab_07
                         for (int i = 0; i < pants.Length; i++)
                         {
                             if (pants[i].Color == Color.Red)
-                            {
                                 Pants.ShowPants(pants);
-                            }
+
                         }
                         for (int i = 0; i < costumesWithPants.Length; i++)
                         {
                             if (costumesWithPants[i].Pants.Color == Color.Red)
-                            {
                                 Costume.ShowCostumeWithPants(costumesWithPants);
-                            }
+
                         }
                         Console.ReadKey();
                         Console.Clear();
