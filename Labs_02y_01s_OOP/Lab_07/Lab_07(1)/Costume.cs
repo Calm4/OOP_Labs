@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lab_07
 {
-    internal class Costume : Clothes
+    public class Costume : Clothes
     {
 
         public Pants Pants { get; set; }
@@ -27,45 +27,46 @@ namespace Lab_07
             Skirt = skirt;
             Blazer = blazer;
         }
-        static public void ShowCostumeWithPants(Costume[] costumesWithPants)
+        static public string ShowCostumeWithPants(Costume[] costumesWithPants,int index)
         {
-            for (int i = 0; i < costumesWithPants.Length; i++)
-            {
-                Console.WriteLine($"Costume №{i + 1}");
-                Console.WriteLine("Часть костюма:\t" + "Брюки : " + costumesWithPants[i].Pants.GetType());
-                Console.WriteLine("Пол:\t\t" + costumesWithPants[i].Pants.Gender);
-                Console.WriteLine("Рост:\t\t" + costumesWithPants[i].Pants.Growth);
-                Console.WriteLine("Тип ткани:\t" + costumesWithPants[i].Pants.Type);
-                Console.WriteLine("Цвет вещи:\t" + costumesWithPants[i].Pants.Color);
-                Console.WriteLine("=========================");
-                Console.WriteLine("Часть костюма:\t" + "Пиджак : " + costumesWithPants[i].Blazer.GetType());
-                Console.WriteLine("Пол:\t\t" + costumesWithPants[i].Blazer.Gender);
-                Console.WriteLine("Рост:\t\t" + costumesWithPants[i].Blazer.Growth);
-                Console.WriteLine("Тип ткани:\t" + costumesWithPants[i].Blazer.Type);
-                Console.WriteLine("Цвет вещи:\t" + costumesWithPants[i].Blazer.Color);
-                Console.WriteLine("=================================================");
-            }
+            //costumesWithPants.Length
+
+            return $"Costume №{index + 1}" + "\n" +
+            "Часть костюма:\t" + "Брюки : " + costumesWithPants[index].Pants.GetType() + "\n" +
+            "Полa:\t\t" + costumesWithPants[index].Pants.Gender + "\n" +
+            "Рост:\t\t" + costumesWithPants[index].Pants.Growth + "\n" +
+            "Тип ткани:\t" + costumesWithPants[index].Pants.Type + "\n" +
+            "Цвет вещи:\t" + costumesWithPants[index].Pants.Color + "\n" +
+            "=========================" + "\n" + 
+            "Часть костюма:\t" + "Пиджак : " + costumesWithPants[index].Blazer.GetType() + "\n" +
+            "Пол:\t\t" + costumesWithPants[index].Blazer.Gender + "\n" +
+            "Рост:\t\t" + costumesWithPants[index].Blazer.Growth + "\n" +
+            "Тип ткани:\t" + costumesWithPants[index].Blazer.Type + "\n" +
+            "Цвет вещи:\t" + costumesWithPants[index].Blazer.Color + "\n" +
+            "=================================================" + "\n";
+
+
+
         }
-        static public void ShowCostumeWithSkirts(Costume[] costumesWithSkirts)
+        static public string ShowCostumeWithSkirts(Costume[] costumesWithSkirts,int index)
         {
-            for (int i = 0; i < costumesWithSkirts.Length; i++)
-            {
-                Console.WriteLine($"Costume №{i + costumesWithSkirts.Length + 1}");
-                Console.WriteLine("Часть костюма:\t" + "Юбка : " + costumesWithSkirts[i].Skirt.GetType());
-                Console.WriteLine("Пол:\t\t" + costumesWithSkirts[i].Skirt.Gender);
-                Console.WriteLine("Рост:\t\t" + costumesWithSkirts[i].Skirt.Growth);
-                Console.WriteLine("Тип ткани:\t" + costumesWithSkirts[i].Skirt.Type);
-                Console.WriteLine("Цвет вещи:\t" + costumesWithSkirts[i].Skirt.Color);
-                Console.WriteLine("=========================");
-                Console.WriteLine("Часть костюма:\t" + "Пиджак : " + costumesWithSkirts[i].Blazer.GetType());
-                Console.WriteLine("Пол:\t\t" + costumesWithSkirts[i].Blazer.Gender);
-                Console.WriteLine("Рост:\t\t" + costumesWithSkirts[i].Blazer.Growth);
-                Console.WriteLine("Тип ткани:\t" + costumesWithSkirts[i].Blazer.Type);
-                Console.WriteLine("Цвет вещи:\t" + costumesWithSkirts[i].Blazer.Color);
-                Console.WriteLine("=================================================");
-            }
+            return $"Costume №{index + costumesWithSkirts.Length + 1}" + "\n" +
+                "Часть костюма:\t" + "Юбка : " + costumesWithSkirts[index].Skirt.GetType() + "\n" +
+                "Пол:\t\t" + costumesWithSkirts[index].Skirt.Gender + "\n" +
+                "Рост:\t\t" + costumesWithSkirts[index].Skirt.Growth + "\n" +
+                "Тип ткани:\t" + costumesWithSkirts[index].Skirt.Type + "\n" +
+                "Цвет вещи:\t" + costumesWithSkirts[index].Skirt.Color + "\n" +
+                "=========================" + "\n" +
+                "Часть костюма:\t" + "Пиджак : " + costumesWithSkirts[index].Blazer.GetType() + "\n" +
+                "Пол:\t\t" + costumesWithSkirts[index].Blazer.Gender + "\n" +
+                "Рост:\t\t" + costumesWithSkirts[index].Blazer.Growth + "\n" +
+                "Тип ткани:\t" + costumesWithSkirts[index].Blazer.Type + "\n" +
+                "Цвет вещи:\t" + costumesWithSkirts[index].Blazer.Color + "\n" +
+                "=================================================" + "\n";
+
+
         }
-        static public void ShowClothesAssortment(Pants[] pants,Skirts[] skirts,Blazer[] blazers,Costume[] costumesWithPants,Costume[] costumesWithSkirts)
+        static public string ShowClothesAssortment(Pants[] pants, Skirts[] skirts, Blazer[] blazers, Costume[] costumesWithPants, Costume[] costumesWithSkirts)
         {
             int pantsCountMan = 0;
             int skirtsCountMan = 0;
@@ -133,15 +134,30 @@ namespace Lab_07
                     blazersCountWoMan++;
                 }
             }
-            Console.WriteLine($"Кол-во мужских ЮБОК: {skirtsCountMan}");
-            Console.WriteLine($"Кол-во женских ЮБОК: {skirtsCountWoMan}");
-            Console.WriteLine($"Кол-во мужских БРЮК: {skirtsCountMan}");
-            Console.WriteLine($"Кол-во женских БРЮК: {skirtsCountWoMan}");
-            Console.WriteLine($"Кол-во мужских ПИДЖАКОВ: {blazersCountMan}");
-            Console.WriteLine($"Кол-во женских ПИДЖАКОВ: {blazersCountWoMan}");
-            Console.ReadKey();
-            Console.Clear();
+            return $"Кол-во мужских ЮБОК: {skirtsCountMan}" + "\n" +
+            $"Кол-во женских ЮБОК: {skirtsCountWoMan}" + "\n" +
+            $"Кол-во мужских БРЮК: {skirtsCountMan}" + "\n" +
+            $"Кол-во женских БРЮК: {skirtsCountWoMan}" + "\n" +
+            $"Кол-во мужских ПИДЖАКОВ: {blazersCountMan}" + "\n" +
+            $"Кол-во женских ПИДЖАКОВ: {blazersCountWoMan}" + "\n";
+            
         }
+       /* static public string ShowManCostumes(Costume[] costumesWithPants, Costume[] costumesWithSkirts)
+        {
+            for (int i = 0; i < costumesWithPants.Length; i++)
+            {
+                if (costumesWithPants[i].Pants.Gender == Gender.Man) ;
+                 Costume.ShowCostumeWithPants(costumesWithPants,i);
+
+
+            }
+            for (int i = 0; i < costumesWithSkirts.Length; i++)
+            {
+                if (costumesWithSkirts[i].Skirt.Gender == Gender.Man) ;
+                  Costume.ShowCostumeWithSkirts(costumesWithSkirts,i);
+
+            }
+        }*/
 
     }
 }

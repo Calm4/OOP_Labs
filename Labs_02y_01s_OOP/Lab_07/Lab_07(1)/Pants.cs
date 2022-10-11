@@ -7,24 +7,19 @@ using System.Threading.Tasks;
 
 namespace Lab_07
 {
-    internal class Pants : Costume
+    public class Pants : Costume
     {
         public Pants(Gender gender, double growth, Type_clothes type, Color color) : base(gender, growth, type, color)
         {
         }
-        static public void ShowPants(Pants[] pants)
+        static public string ShowPants(Pants[] pants,int index)
         {
-            for (int i = 0; i < pants.Length; i++)
-            {
-                Console.WriteLine($"Брюки №{i + 1}");
-                Console.WriteLine("Часть костюма:\t" + "Брюки : " + pants[i].GetType());
-                Console.WriteLine("Пол:\t\t" + pants[i].Gender);
-                Console.WriteLine("Рост:\t\t" + pants[i].Growth);
-                Console.WriteLine("Тип ткани:\t" + pants[i].Type);
-                Console.WriteLine("Цвет вещи:\t" + pants[i].Color);
-            }
-            Console.ReadKey();
-            Console.Clear();
+            return $"Брюки №{index + 1}" + "\n" +
+              "Часть костюма:\t" + "Брюки : " + pants[index].GetType() + "\n" +
+              "Пол:\t\t" + pants[index].Gender + "\n" +
+              "Рост:\t\t" + pants[index].Growth + "\n" +
+              "Тип ткани:\t" + pants[index].Type + "\n" +
+              "Цвет вещи:\t" + pants[index].Color + "\n";
         }
     }
 }

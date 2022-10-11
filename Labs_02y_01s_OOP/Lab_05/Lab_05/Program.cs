@@ -14,17 +14,15 @@ namespace Lab_05
         static void Main(string[] args)
         {
             string[] newFile = File.ReadAllLines($"Examples/1.txt");
-            for (int i = 0; i < newFile.Length; i++)
-            {
-                Console.WriteLine(newFile[i]);
-            }
+            int number1, number2, number3, number4, result = 0;
+
+            OutPut(newFile);
             Console.WriteLine("==================================");
             Match[] match = new Match[newFile.Length];
             for (int i = 0; i < newFile.Length; i++)
             {
                 match[i] = Regex.Match(newFile[i], "\\((.*?)\\+(.*?)\\)\\*(.*?)\\-\\((.*)\\)");
             }
-            int number1, number2, number3, number4, result = 0;
 
             for (int i = 0; i < newFile.Length; i++)
             {
@@ -38,5 +36,13 @@ namespace Lab_05
             }
 
         }
+        static void OutPut(string[] newFile)
+        {
+            for (int i = 0; i < newFile.Length; i++)
+            {
+                Console.WriteLine(newFile[i]);
+            }
+        }
+        
     }
 }

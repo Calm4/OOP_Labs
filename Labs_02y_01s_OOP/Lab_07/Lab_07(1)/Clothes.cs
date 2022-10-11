@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lab_07
 {
-    internal class Clothes
+    public class Clothes
     {
         public Gender Gender { get; set; }
         public double Growth { get; set; }

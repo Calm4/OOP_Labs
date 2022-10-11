@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab_07_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="1080" Width="1920">
+    <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" RenderTransformOrigin="0.5,0.5" Margin="0,0,-93,-314" Width="1916" Height="1080">
+        <ScrollViewer.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.046"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </ScrollViewer.RenderTransform>
+        <Grid Width="1920" Height="1080" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="106*"/>
+                <ColumnDefinition Width="953*"/>
+                <ColumnDefinition Width="941*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="label1" Content="Меню для лабораторной работы №7, сделанное с помощью WPF" HorizontalAlignment="Left" Margin="646,10,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Black" Grid.Column="1" Grid.ColumnSpan="2" Height="31" Width="495"/>
+            <Button x:Name="button1" Content="Вывести все костюмы c юбками" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Click="button1_Click" AutomationProperties.AccessKey="" Grid.ColumnSpan="2" Height="30" Width="350"/>
+            <Button x:Name="button2" Content="Вывести юбки" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Click="button2_Click" Height="30" Width="350" Grid.ColumnSpan="2"/>
+            <Button x:Name="button3" Content="Вывести брюки" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" Click="button3_Click" Height="30" Width="350
+                    " Grid.ColumnSpan="2"/>
+            <Button x:Name="button4" Content="Вывести пиджаки" HorizontalAlignment="Left" Margin="10,187,0,0" VerticalAlignment="Top" Click="button4_Click_1" Grid.ColumnSpan="2" Height="30" Width="350"/>
+            <Button x:Name="button5" Content="Вывод мужских костюмоv." HorizontalAlignment="Left" Margin="9,224,0,0" VerticalAlignment="Top" Click="button5_Click" Height="30" Width="350" Grid.ColumnSpan="2"/>
+            <Button x:Name="button6" Content="Вывести все брюки красного цвета (в том числе и в костюмах)" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" Click="button6_Click" Grid.ColumnSpan="2" Height="30" Width="350"/>
+            <Button x:Name="button7" Content="Вывести количество единиц каждого вида одежды " HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" Height="30" Width="350" Click="button7_Click" Grid.ColumnSpan="2" />
+            <Button x:Name="button8" Content="Выход" HorizontalAlignment="Left" Margin="17,451,0,0" VerticalAlignment="Top" Click="button8_Click" Height="30" Width="100" Grid.Column="1"/>
+
+            <TextBlock x:Name="textBox1"  HorizontalAlignment="Left" Margin="303,0,0,152" TextWrapping="Wrap" Width="1198" Background="#FFDAC9C8" Grid.ColumnSpan="2" Grid.Column="1" FontSize="10"/>
+            <Button x:Name="button1_2" Content="Вывести все костюмы c брюками" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Click="button1_2_Click" Grid.ColumnSpan="2" Height="30" Width="350
+                    "/>
+            <Button x:Name="button5_2" Content="Вывод женских костюмоv" HorizontalAlignment="Left" Margin="10,260,0,0" VerticalAlignment="Top" Click="button5_2_Click" Grid.ColumnSpan="2" Height="30" Width="350"/>
+            <Button x:Name="button5_3" Content="Вывод женские костюмы с брюками" HorizontalAlignment="Left" Margin="10,296,0,0" VerticalAlignment="Top" Click="button5_3_Click" Grid.ColumnSpan="2" Height="30" Width="350"/>
+        </Grid>
+    </ScrollViewer>
+
+
 </Window>
