@@ -65,17 +65,25 @@ namespace Lab_07
                 switch (menuPunct)
                 {
                     case 1:
-                        Console.WriteLine("1)Костюм: ПИДЖАК + ЮБКА");
-                        Console.WriteLine("2)Костюм: ПИДЖАК + БРЮКИ");
+                        Console.WriteLine("1)Костюм: ПИДЖАК + БРЮКИ");
+                        Console.WriteLine("2)Костюм: ПИДЖАК + ЮБКА");
                         byte whichCostume = Convert.ToByte(Console.ReadLine());
                         if (whichCostume == 1)
                         {
-                            //Costume.ShowCostumeWithPants(costumesWithPants);
+                            for (int i = 0; i < costumesWithPants.Length; i++)
+                            {
+                                Console.WriteLine( Costume.ShowCostumeWithPants(costumesWithPants,i));
+
+                            }
 
                         }
                         else if (whichCostume == 2)
                         {
-                           // Costume.ShowCostumeWithSkirts(costumesWithSkirts);
+                            for (int i = 0; i < costumesWithSkirts.Length; i++)
+                            {
+                                Console.WriteLine(Costume.ShowCostumeWithSkirts(costumesWithSkirts,i));
+
+                            }
                         }
                         else
                         {
@@ -86,15 +94,33 @@ namespace Lab_07
                         break;
                     case 2:
                         Console.WriteLine("Весь ассортимент ЮБОК");
-                        //Skirts.ShowSkirt(skirts);
+                        for (int i = 0; i < skirts.Length; i++)
+                        {
+
+                            Console.WriteLine(Skirts.ShowSkirt(skirts, i));
+                        }
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 3:
                         Console.WriteLine("Весь ассортимент ПИДЖАКОВ");
-                        //Blazer.ShowBlazers(blazers);
+                        for (int i = 0; i < blazers.Length; i++)
+                        {
+                            Console.WriteLine(Blazer.ShowBlazers(blazers, i));
+
+                        }
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 4:
                         Console.WriteLine("Весь ассортимент БРЮК");
-                        //Pants.ShowPants(pants);
+                        for (int i = 0; i < pants.Length; i++)
+                        {
+                            Console.WriteLine(Pants.ShowPants(pants,i));
+
+                        }
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 5:
                         Console.WriteLine("1)Мужские косmюмы");
@@ -105,15 +131,15 @@ namespace Lab_07
                         {
                             for (int i = 0; i < costumesWithPants.Length; i++)
                             {
-                                if (costumesWithPants[i].Pants.Gender == Gender.Man) ;
-                                   // Costume.ShowCostumeWithPants(costumesWithPants);
+                                if (costumesWithPants[i].Pants.Gender == Gender.Man)
+                                    Console.WriteLine(Costume.ShowCostumeWithPants(costumesWithPants, i));
 
 
                             }
                             for (int i = 0; i < costumesWithSkirts.Length; i++)
                             {
-                                if (costumesWithSkirts[i].Skirt.Gender == Gender.Man) ;
-                                  //  Costume.ShowCostumeWithSkirts(costumesWithSkirts);
+                                if (costumesWithSkirts[i].Skirt.Gender == Gender.Man)
+                                    Console.WriteLine(Costume.ShowCostumeWithSkirts(costumesWithSkirts, i));
 
                             }
                         }
@@ -121,15 +147,15 @@ namespace Lab_07
                         {
                             for (int i = 0; i < costumesWithPants.Length; i++)
                             {
-                                if (costumesWithPants[i].Pants.Gender == Gender.Woman) ;
-                                //   // Costume.ShowCostumeWithPants(costumesWithPants);
+                                if (costumesWithPants[i].Pants.Gender == Gender.Woman)
+                                    Console.WriteLine(Costume.ShowCostumeWithPants(costumesWithPants, i));
 
 
                             }
                             for (int i = 0; i < costumesWithSkirts.Length; i++)
                             {
-                                if (costumesWithSkirts[i].Skirt.Gender == Gender.Woman) ;
-                                //    Costume.ShowCostumeWithSkirts(costumesWithSkirts);
+                                if (costumesWithSkirts[i].Skirt.Gender == Gender.Woman)
+                                    Console.WriteLine(Costume.ShowCostumeWithSkirts(costumesWithSkirts, i));
 
                             }
                         }
@@ -137,8 +163,8 @@ namespace Lab_07
                         {
                             for (int i = 0; i < costumesWithPants.Length; i++)
                             {
-                                if ((costumesWithPants[i].Pants.Gender == Gender.Woman)) ;
-                                //    Costume.ShowCostumeWithPants(costumesWithPants);
+                                if ((costumesWithPants[i].Pants.Gender == Gender.Woman))
+                                    Console.WriteLine(Costume.ShowCostumeWithPants(costumesWithPants, i));
 
                             }
                         }
@@ -152,21 +178,23 @@ namespace Lab_07
                     case 6:
                         for (int i = 0; i < pants.Length; i++)
                         {
-                            if (pants[i].Color == Color.Red) ;
-                              //  Pants.ShowPants(pants);
+                            if (pants[i].Color == Color.Red)
+                                Console.WriteLine(Pants.ShowPants(pants, i));
 
                         }
                         for (int i = 0; i < costumesWithPants.Length; i++)
                         {
-                            if (costumesWithPants[i].Pants.Color == Color.Red) ;
-                              //  Costume.ShowCostumeWithPants(costumesWithPants);
+                            if (costumesWithPants[i].Pants.Color == Color.Red)
+                                Console.WriteLine(Costume.ShowCostumeWithPants(costumesWithPants, i));
 
                         }
                         Console.ReadKey();
                         Console.Clear();
                         break;
                     case 7:
-                        Costume.ShowClothesAssortment(pants, skirts, blazers, costumesWithPants, costumesWithSkirts);
+                        Console.WriteLine(Costume.ShowClothesAssortment(pants, skirts, blazers, costumesWithPants, costumesWithSkirts));
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 8:
                         isWork = false;

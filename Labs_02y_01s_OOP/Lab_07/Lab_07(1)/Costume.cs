@@ -142,22 +142,7 @@ namespace Lab_07
             $"Кол-во женских ПИДЖАКОВ: {blazersCountWoMan}" + "\n";
             
         }
-       /* static public string ShowManCostumes(Costume[] costumesWithPants, Costume[] costumesWithSkirts)
-        {
-            for (int i = 0; i < costumesWithPants.Length; i++)
-            {
-                if (costumesWithPants[i].Pants.Gender == Gender.Man) ;
-                 Costume.ShowCostumeWithPants(costumesWithPants,i);
-
-
-            }
-            for (int i = 0; i < costumesWithSkirts.Length; i++)
-            {
-                if (costumesWithSkirts[i].Skirt.Gender == Gender.Man) ;
-                  Costume.ShowCostumeWithSkirts(costumesWithSkirts,i);
-
-            }
-        }*/
+      
 
     }
 }

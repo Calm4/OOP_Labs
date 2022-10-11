@@ -16,7 +16,7 @@ namespace Lab_07
         static public string ShowBlazers(Blazer[] blazers, int index)
         {
 
-            return $"Юбка №{index + 1}" + "\n" +
+            return $"Пиджак №{index + 1}" + "\n" +
            "Часть костюма:\t" + "Пиджак : " + blazers[index].GetType() + "\n" +
            "Пол:\t\t" + blazers[index].Gender + "\n" +
            "Рост:\t\t" + blazers[index].Growth + "\n" +
