@@ -84,7 +84,7 @@ namespace Lab_07
                                 Console.WriteLine(Costume.ShowCostumeWithSkirts(costumesWithSkirts,i));
 
                             }
-                        }
+                        } 
                         else
                         {
                             Console.WriteLine("ТАКОГО ПУНКТА НЕТ!");

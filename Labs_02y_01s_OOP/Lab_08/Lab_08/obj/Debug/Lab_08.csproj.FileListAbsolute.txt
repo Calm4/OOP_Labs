@@ -1,0 +1,8 @@
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\Lab_08\bin\Debug\Lab_08.exe.config
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\Lab_08\bin\Debug\Lab_08.exe
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\Lab_08\bin\Debug\Lab_08.pdb
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\Lab_08\obj\Debug\Lab_08.csproj.AssemblyReference.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\Lab_08\obj\Debug\Lab_08.csproj.SuggestedBindingRedirects.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\Lab_08\obj\Debug\Lab_08.csproj.CoreCompileInputs.cache
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\Lab_08\obj\Debug\Lab_08.exe
+D:\Work\Projekts\OOP_LABS\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\Lab_08\obj\Debug\Lab_08.pdb

@@ -1,0 +1,2 @@
+Square: leftBotX : 2 | leftBotY : 2| leftTopX: 2 | leftTopY: 5 | rightTopX: 8 | rightTopY: 5 | rightBotX: 8 | rightBotY: 2 | 
+Circle: centerOfCircleX : 3 | centerOfCircle : 3 | radius : 5 | color : Red |
