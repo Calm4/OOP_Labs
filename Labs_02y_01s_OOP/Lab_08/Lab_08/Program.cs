@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
+using System.IO;
 
 namespace Lab_08
 {
@@ -10,8 +12,22 @@ namespace Lab_08
     {
         static void Main(string[] args)
         {
-            IGeometricShapes array = new Square();
-            Console.WriteLine(array.Area);
+            string[] newFile = File.ReadAllLines($"Shapes/shapes.txt");
+            IGeometricShapes[] array =
+            {
+                new Square(2,2,2,5,5,5,5,2),
+            };
+            Square[] squares =
+            {
+                 new Square(2,2,2,5,5,5,5,2),
+            };
+            GeometricShape[] geometricShape =
+            {
+                new Square(2,2,2,5,5,5,5,2),
+            };
+           
+            Console.WriteLine(geometricShape[0]);
+
         }
     }
     

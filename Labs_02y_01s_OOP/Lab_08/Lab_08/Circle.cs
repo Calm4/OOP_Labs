@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab_08
 {
-    internal class Circle : IGeometricShapes
+    internal class Circle : GeometricShape,IGeometricShapes
     {
         private int[] coordinates = new int[2];
        
@@ -14,7 +14,7 @@ namespace Lab_08
         private string _CircleColor;
         public double Area { get; set; }
 
-        public Circle(int x,int y,int radius,string color)
+        public Circle(int x,int y,int radius,string color) : base(x,y)
         {
             coordinates[0] = x;
             coordinates[1] = y;

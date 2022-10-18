@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lab_08
 {
-    internal class Square : IGeometricShapes
+    internal class Square : GeometricShape,IGeometricShapes
     {
-        int[] coordinates = new int[8];
+        public int[] coordinates = new int[8];
+        
         public double Area { get; set; }
-        public Square()
+        public Square(int leftBotX, int leftBotY, int leftTopX, int leftTopY, int rightTopX, int rightTopY, int rightBotX, int rightBotY) : base(leftBotX,leftBotY,leftTopX,leftTopY,rightTopX,rightTopY,rightBotX,rightBotY)
         {
+          
 
         }
 
@@ -33,7 +35,7 @@ namespace Lab_08
         {
             get => coordinates[index];
             set => coordinates[index] = value;
-            
+
         }
 
     }
