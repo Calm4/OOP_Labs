@@ -14,7 +14,7 @@ namespace Lab_08
         private string _CircleColor;
         public double Area { get; set; }
 
-        public Circle(int x,int y,int radius,string color) : base(x,y)
+        public Circle(int x,int y,int radius,string color)
         {
             coordinates[0] = x;
             coordinates[1] = y;

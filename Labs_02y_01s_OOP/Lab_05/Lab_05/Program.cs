@@ -23,7 +23,7 @@ namespace Lab_05
             {
                 match[i] = Regex.Match(newFile[i], "\\((.*?)\\+(.*?)\\)\\*(.*?)\\-\\((.*)\\)");
             }
-
+            
             for (int i = 0; i < newFile.Length; i++)
             {
 

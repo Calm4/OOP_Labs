@@ -8,7 +8,7 @@ namespace Lab_08
 {
     internal class GeometricShape
     {
-        int[] squareCoordinates = new int[8];
+       /* int[] squareCoordinates = new int[8];
         int[] circleCoordinates = new int[2];
         
         public GeometricShape(int leftBotX, int leftBotY, int leftTopX, int leftTopY, int rightTopX, int rightTopY, int rightBotX, int rightBotY)
@@ -27,6 +27,6 @@ namespace Lab_08
             squareCoordinates[0] = x;
             squareCoordinates[1] = y;
 
-        }
+        }*/
     }
 }

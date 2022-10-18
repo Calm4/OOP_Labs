@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Circle.cs" />
+    <Compile Include="Comperer.cs" />
     <Compile Include="GeometricShape.cs" />
     <Compile Include="IGeometricShapes.cs" />
     <Compile Include="Program.cs" />

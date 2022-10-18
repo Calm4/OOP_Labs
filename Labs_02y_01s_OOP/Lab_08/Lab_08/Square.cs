@@ -11,7 +11,7 @@ namespace Lab_08
         public int[] coordinates = new int[8];
         
         public double Area { get; set; }
-        public Square(int leftBotX, int leftBotY, int leftTopX, int leftTopY, int rightTopX, int rightTopY, int rightBotX, int rightBotY) : base(leftBotX,leftBotY,leftTopX,leftTopY,rightTopX,rightTopY,rightBotX,rightBotY)
+        public Square(int leftBotX, int leftBotY, int leftTopX, int leftTopY, int rightTopX, int rightTopY, int rightBotX, int rightBotY)
         {
           
 
