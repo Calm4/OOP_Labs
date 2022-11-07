@@ -1,1 +1,10 @@
-Square: leftBotX :2| leftBotY :2| leftTopX:2| leftTopY:5| rightTopX:8| rightTopY:5| rightBotX:8| rightBotY:2| 
+Square: -2,-2,-2,8,8,8,8,-2,
+Circle: 2,2,3,Red
+Circle: 4,4,2,Blue
+Square: -10,-10,-10,4,4,4,4,-10,
+Square: 3,3,3,7,7,7,7,3,
+Circle: 5,5,6,Yellow
+Circle: 3,5,4,Magenta
+Circle: 1,4,9,Green
+Circle: 3,7,12,Yellow
+Square: -4,-4,-4,4,4,4,4,-4

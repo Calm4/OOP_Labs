@@ -12,52 +12,69 @@ namespace Lab_08
     internal class Program
     {
         static void Main(string[] args)
-        { 
-           
-            string[] newFile = File.ReadAllLines($"Shapes/shapes.txt");
-            Match[] match = new Match[newFile.Length];
-            int[] coordinates = new int[8];
-            IGeometricShapes[] array =
+        {
+            GeometricShape geometricShape = new GeometricShape();
+            bool isWork = true;
+            int punctOfMenu = 0;
+            while (isWork)
             {
-                new Square(2,2,2,5,5,5,5,2),
-            };
-            Square[] squares =
-            {
-                 new Square(2,2,2,5,5,5,5,2),
-            };
-            GeometricShape[] geometricShape =
-            {
-                new Square(2,2,2,5,5,5,5,2),
-            };
+                geometricShape.FindAllShapesInTextFile();
+                Console.WriteLine("1)Вывести информацию о фигурах");
+                Console.WriteLine("2)Сортирует фигуры в порядке возрастания по их площадям");
+                Console.WriteLine("3)Вывести периметр всех квадратов, полностью расположенных больше чем в 1 четверти координатной плоскости");
+                Console.WriteLine("4)Вывести длины всех окружностей в порядке убывания длин окружностей");
+                Console.WriteLine("5)Выход");
+                punctOfMenu = Convert.ToInt32(Console.ReadLine());
 
-
-
-            for (int i = 0; i < newFile.Length; i++)
-            {
-                match[i] = Regex.Match(newFile[i], "Square: leftBotX :(.*?)\\| leftBotY :(.*?)\\| leftTopX:(.*?)\\| leftTopY:(.*?)\\| rightTopX:(.*?)\\| rightTopY:(.*?)\\| rightBotX:(.*?)\\| rightBotY:(.*?)\\| \r\n");
-            }
-
-            coordinates[0] = Convert.ToInt32(match[0].Groups[1].ToString()) ;
-            Console.WriteLine(coordinates[0]);
-
-            /*for (int i = 0; i < newFile.Length; i++)
-            {
-                for (int j  = 0; j < coordinates.Length; j++)
+                switch (punctOfMenu)
                 {
-                    coordinates[j] = Convert.ToInt32(match[i].Groups[j+1].ToString());
+                    case 1:
+                        geometricShape.OutPutSquare();
+                        geometricShape.OutPutCircle();
+                        break;
+                    case 2:
+                        geometricShape.SortByArea();
+                        geometricShape.OutPutSquare();
+                        geometricShape.OutPutCircle();
+                        break;
+                    case 3:
+                        geometricShape.GetSquarePerimetrerMoreThanOneQuater();
+                        break;
+                    case 4:
+                        geometricShape.GetCircleLength();
+                        break;
+                    case 5:
+                        isWork = false;
+                        break;
+                    default:
+                        Console.Clear();
+                        continue;
 
                 }
-            }*/
-            for (int i = 0; i < coordinates.Length; i++)
-            {
-                Console.WriteLine(coordinates[i]);
+                Console.ReadKey();
+                Console.Clear();
             }
+
+            /* Console.WriteLine();
+             geometricShape.OutPutSquare();
+             Console.WriteLine("++++++++++++++++++++++++");
+             geometricShape.OutPutCircle();
+             geometricShape.GetArea();
+             geometricShape.SortByArea();
+             geometricShape.OutPutSquare();
+             geometricShape.OutPutCircle();
+             Console.WriteLine("..//./././../././././/,./,");
+             geometricShape.GetSquarePerimetrerMoreThanOneQuater();
+             Console.WriteLine("+___________________++++++++++++__________+=");
+             geometricShape.GetCircleLength();*/
+
         }
     }
 
+    //Square: leftBotX :2Q, leftBotY :2Q. leftTopX:2Q. leftTopY:5Q, rightTopX:8Q, rightTopY:5Q, rightBotX:8Q, rightBotY:2Q, 
 
     //Circle: centerOfCircleX : 3 \\| centerOfCircle : 3 \\| radius : 5 \\| color : Red \\|
 
 
-
+    //"Square: leftBotX :(.*?), leftBotY :(.*?), leftTopX:(.*?), leftTopY:(.*?), rightTopX:(.*?), rightTopY:(.*?), rightBotX:(.*?), rightBotY:(.*?)"
 }

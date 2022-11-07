@@ -23,11 +23,15 @@ namespace Lab_08
         }
         public void ShowInformation()
         {
-
+            Console.WriteLine($"Координаты центра круга: {{{coordinates[0]},{coordinates[1]}}}");
+            Console.WriteLine($"Радиус: {_radius}");
+            Console.WriteLine($"Длина окружности: {CircleLength()}");
         }
         public double CircleLength()
         {
-            return 1;
+            const double pi = 3.1415926535;
+            double circleLength = 2 * pi * _radius;
+            return circleLength;
         }
         public int this[int index]
         {

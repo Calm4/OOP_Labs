@@ -9,17 +9,23 @@ namespace Lab_08
     internal class Square : GeometricShape,IGeometricShapes
     {
         public int[] coordinates = new int[8];
-        
+    
         public double Area { get; set; }
         public Square(int leftBotX, int leftBotY, int leftTopX, int leftTopY, int rightTopX, int rightTopY, int rightBotX, int rightBotY)
         {
-          
-
+            coordinates[0] = leftBotX;
+            coordinates[1] = leftBotY;
+            coordinates[2] = leftTopX;
+            coordinates[3] = leftTopY;
+            coordinates[4] = rightTopX;
+            coordinates[5] = rightTopY;
+            coordinates[6] = rightBotX;
+            coordinates[7] = rightBotY;
         }
 
         public double GetArea()
         {
-            Area = 1;
+            Area = (coordinates[3] - coordinates[1]) * (coordinates[3] - coordinates[1]);
             return Area;
         }
         public double Perimetr()
