@@ -19,6 +19,7 @@ namespace Lab_08
             while (isWork)
             {
                 geometricShape.FindAllShapesInTextFile();
+                geometricShape.CloseInputSphereCoordinates(); 
                 Console.WriteLine("1)Вывести информацию о фигурах");
                 Console.WriteLine("2)Сортирует фигуры в порядке возрастания по их площадям");
                 Console.WriteLine("3)Вывести периметр всех квадратов, полностью расположенных больше чем в 1 четверти координатной плоскости");

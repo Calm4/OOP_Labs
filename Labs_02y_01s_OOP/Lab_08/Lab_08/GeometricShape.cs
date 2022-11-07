@@ -33,21 +33,59 @@ namespace Lab_08
         public void FindAllShapesInTextFile()
         {
 
-           
+
             for (int i = 0; i < textFile.Length; i++)
             {
                 if (textFile[i].StartsWith("Square:"))
                 {
                     Shapes[i] = new Square(squareCoordinates[i, 0], squareCoordinates[i, 1], squareCoordinates[i, 2], squareCoordinates[i, 3], squareCoordinates[i, 4], squareCoordinates[i, 5], squareCoordinates[i, 6], squareCoordinates[i, 7]);
-                   
+
                 }
                 else if (textFile[i].StartsWith("Circle:"))
                 {
                     Shapes[i] = new Circle(circleCoordinates[i, 0], circleCoordinates[i, 1], circleCoordinates[i, 2], circleColor[i, 0]);
-                   
+
                 }
 
 
+            }
+        }
+        public void CloseInputSphereCoordinates()
+        {
+            for (int i = 0; i < textFile.Length; i++)
+            {
+                if (textFile[i].StartsWith("Square:"))
+                {
+                    stringWithSquareCoordinates = textFile[i].Substring(8).Split(',');
+                    for (int j = 0; j < squareCoordinates.GetLength(1); j++)
+                    {
+                        squareCoordinates[i, j] = Int32.Parse(stringWithSquareCoordinates[j]);
+                    }
+
+                }
+                if (textFile[i].StartsWith("Circle:"))
+                {
+                    stringWithCircleColor = textFile[i].Substring(8).Split(',');
+                    circleColor[i, 0] = stringWithCircleColor[3];
+                    for (int k = 0; k < consoleColor.Length; k++)
+                    {
+                        if (circleColor[i, 0].ToString() == consoleColor[k].ToString())
+                        {
+
+                            stringWithCircleCoordinates = textFile[i].Substring(8).Split(',');
+
+                            for (int j = 0; j < circleCoordinates.GetLength(1); j++)
+                            {
+                                circleCoordinates[i, j] = Int32.Parse(stringWithCircleCoordinates[j]);
+
+                            }
+                        }
+                    }
+                    for (int j = 0; j < circleColor.GetLength(1); j++)
+                    {
+                        circleColor[i, j] = stringWithCircleColor[3];
+                    }
+                }
             }
         }
         // вывод квадратов из текстового файла
@@ -58,26 +96,25 @@ namespace Lab_08
             {
                 if (textFile[i].StartsWith("Square:"))
                 {
-                    stringWithSquareCoordinates = textFile[i].Substring(8).Split(',');
+
                     Console.WriteLine("square");
                     for (int j = 0; j < squareCoordinates.GetLength(1); j++)
                     {
-                        squareCoordinates[i, j] = Int32.Parse(stringWithSquareCoordinates[j]);
+
                         Console.Write(squareCoordinates[i, j] + "|");
                     }
+
                     Console.WriteLine();
                 }
+
             }
         }
-        
+
         // вывод кругов из текстового файла
         public void OutPutCircle()
         {
-
             for (int i = 0; i < textFile.Length; i++)
             {
-                stringWithCircleColor = textFile[i].Substring(8).Split(',');
-                circleColor[i, 0] = stringWithCircleColor[3];
                 if (textFile[i].StartsWith("Circle:"))
                 {
                     for (int k = 0; k < consoleColor.Length; k++)
@@ -85,18 +122,15 @@ namespace Lab_08
                         if (circleColor[i, 0].ToString() == consoleColor[k].ToString())
                         {
                             Console.ForegroundColor = consoleColor[k];
-                            stringWithCircleCoordinates = textFile[i].Substring(8).Split(',');
                             Console.WriteLine("circle:");
                             for (int j = 0; j < circleCoordinates.GetLength(1); j++)
                             {
-                                circleCoordinates[i, j] = Int32.Parse(stringWithCircleCoordinates[j]);
                                 Console.Write(circleCoordinates[i, j] + "/");
                             }
                         }
                     }
                     for (int j = 0; j < circleColor.GetLength(1); j++)
                     {
-                        circleColor[i, j] = stringWithCircleColor[3];
                         Console.Write(circleColor[i, 0]);
                         Console.ForegroundColor = ConsoleColor.White;
                     }
@@ -139,7 +173,7 @@ namespace Lab_08
                     temp = ShapesArea[i, 0];
                     ShapesArea[i, 0] = ShapesArea[i + 1, 0];
                     ShapesArea[i + 1, 0] = temp;
-                    
+
                 }
 
             }
