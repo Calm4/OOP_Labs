@@ -30,11 +30,19 @@ namespace Lab_08
         }
         public double Perimetr()
         {
+            
             return 1;
         }
         public void ShowInformation()
         {
-
+            Console.WriteLine("Координата квадрата: " + coordinates[0]);
+            Console.WriteLine("Координата квадрата: " + coordinates[1]);
+            Console.WriteLine("Координата квадрата: " + coordinates[2]);
+            Console.WriteLine("Координата квадрата: " + coordinates[3]);
+            Console.WriteLine("Координата квадрата: " + coordinates[4]);
+            Console.WriteLine("Координата квадрата: " + coordinates[5]);
+            Console.WriteLine("Координата квадрата: " + coordinates[6]);
+            Console.WriteLine("Координата квадрата: " + coordinates[7]);
         }
 
         public int this[int index]

@@ -1,0 +1,15 @@
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\bin\Debug\Lab_08.exe
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\bin\Debug\Lab_08.pdb
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\bin\Debug\Lab_08.exe.config
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.AssemblyReference.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.SuggestedBindingRedirects.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
+E:\Projects\C#\OOP-_02_01\Labs_02y_01s_OOP\Lab_08\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb

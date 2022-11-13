@@ -14,18 +14,21 @@ namespace Lab_08
         static void Main(string[] args)
         {
             GeometricShape geometricShape = new GeometricShape();
+
             bool isWork = true;
             int punctOfMenu = 0;
             while (isWork)
             {
+                GeometricShape.CountOfCircles();
                 geometricShape.FindAllShapesInTextFile();
-                geometricShape.CloseInputSphereCoordinates(); 
+                geometricShape.CloseInputSphereCoordinates();
                 Console.WriteLine("1)Вывести информацию о фигурах");
                 Console.WriteLine("2)Сортирует фигуры в порядке возрастания по их площадям");
                 Console.WriteLine("3)Вывести периметр всех квадратов, полностью расположенных больше чем в 1 четверти координатной плоскости");
                 Console.WriteLine("4)Вывести длины всех окружностей в порядке убывания длин окружностей");
                 Console.WriteLine("5)Выход");
                 punctOfMenu = Convert.ToInt32(Console.ReadLine());
+
 
                 switch (punctOfMenu)
                 {
@@ -34,9 +37,12 @@ namespace Lab_08
                         geometricShape.OutPutCircle();
                         break;
                     case 2:
+                       
+                        geometricShape.GetArea();
                         geometricShape.SortByArea();
-                        geometricShape.OutPutSquare();
-                        geometricShape.OutPutCircle();
+                        geometricShape.OutPutSortedAreas();
+                        //geometricShape.OutPutSquare();
+                         //geometricShape.OutPutCircle();
                         break;
                     case 3:
                         geometricShape.GetSquarePerimetrerMoreThanOneQuater();

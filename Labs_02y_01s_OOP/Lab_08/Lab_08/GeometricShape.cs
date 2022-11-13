@@ -8,22 +8,27 @@ using System.Collections;
 
 namespace Lab_08
 {
-    internal class GeometricShape
+    public class GeometricShape
     {
         public double Area { get; set; }
-
-        static string[] textFile = File.ReadAllLines($"Shapes/shapes.txt");
-        public int[,] squareCoordinates = new int[textFile.Length, 8];
-        public int[,] circleCoordinates = new int[textFile.Length, 3];
-        public string[,] circleColor = new string[textFile.Length, 1];
-        public double[,] ShapesArea = new double[textFile.Length, 1];
-        public double[,] SquarePerimetr = new double[textFile.Length, 1];
-        public double[,] CirclesLength = new double[textFile.Length, 1];
+        static private int _squareCounter;
+        static private int _circleCounter;
 
 
+
+        static readonly string[] textFile = File.ReadAllLines($"Shapes/shapes.txt");
+        private readonly int[,] squareCoordinates = new int[textFile.Length, 8];
+        private readonly int[,] circleCoordinates = new int[textFile.Length, 3];
+        private readonly string[] circleColor = new string[textFile.Length];
+        private readonly double[] ShapesArea = new double[CountOfSquares() + CountOfCircles()];
+        private readonly double[] SquarePerimetr = new double[CountOfSquares()];
+        private readonly double[] CirclesLength = new double[CountOfCircles()];
+
+        // Временные массивы для выборки информации из текстового файла
         string[] stringWithSquareCoordinates;
         string[] stringWithCircleCoordinates;
         string[] stringWithCircleColor;
+
 
         public GeometricShape[] Shapes = new GeometricShape[textFile.Length];
         ConsoleColor[] consoleColor = new ConsoleColor[5] { ConsoleColor.Red, ConsoleColor.Green, ConsoleColor.Yellow, ConsoleColor.Blue, ConsoleColor.Magenta };
@@ -32,8 +37,6 @@ namespace Lab_08
         // находит все фигуры в файле и создает новые объекты
         public void FindAllShapesInTextFile()
         {
-
-
             for (int i = 0; i < textFile.Length; i++)
             {
                 if (textFile[i].StartsWith("Square:"))
@@ -43,15 +46,38 @@ namespace Lab_08
                 }
                 else if (textFile[i].StartsWith("Circle:"))
                 {
-                    Shapes[i] = new Circle(circleCoordinates[i, 0], circleCoordinates[i, 1], circleCoordinates[i, 2], circleColor[i, 0]);
+                    Shapes[i] = new Circle(circleCoordinates[i, 0], circleCoordinates[i, 1], circleCoordinates[i, 2], circleColor[i]);
 
                 }
-
-
             }
+
         }
+        public static int CountOfCircles()
+        {
+            for (int i = 0; i < textFile.Length; i++)
+            {
+                if (textFile[i].StartsWith("Circle:"))
+                {
+                    _circleCounter++;
+                }
+            }
+            return _circleCounter;
+        }
+        public static int CountOfSquares()
+        {
+            for (int i = 0; i < textFile.Length; i++)
+            {
+                if (textFile[i].StartsWith("Square:"))
+                {
+                    _squareCounter++;
+                }
+            }
+            return _squareCounter;
+        }
+
         public void CloseInputSphereCoordinates()
         {
+
             for (int i = 0; i < textFile.Length; i++)
             {
                 if (textFile[i].StartsWith("Square:"))
@@ -66,10 +92,10 @@ namespace Lab_08
                 if (textFile[i].StartsWith("Circle:"))
                 {
                     stringWithCircleColor = textFile[i].Substring(8).Split(',');
-                    circleColor[i, 0] = stringWithCircleColor[3];
+                    circleColor[i] = stringWithCircleColor[3];
                     for (int k = 0; k < consoleColor.Length; k++)
                     {
-                        if (circleColor[i, 0].ToString() == consoleColor[k].ToString())
+                        if (circleColor[i].ToString() == consoleColor[k].ToString())
                         {
 
                             stringWithCircleCoordinates = textFile[i].Substring(8).Split(',');
@@ -81,15 +107,14 @@ namespace Lab_08
                             }
                         }
                     }
-                    for (int j = 0; j < circleColor.GetLength(1); j++)
-                    {
-                        circleColor[i, j] = stringWithCircleColor[3];
-                    }
+
+                    circleColor[i] = stringWithCircleColor[3];
+
                 }
             }
         }
         // вывод квадратов из текстового файла
-        public void OutPutSquare()
+        public string OutPutSquare()
         {
 
             for (int i = 0; i < textFile.Length; i++)
@@ -108,10 +133,11 @@ namespace Lab_08
                 }
 
             }
+            return " ";
         }
 
         // вывод кругов из текстового файла
-        public void OutPutCircle()
+        public string OutPutCircle()
         {
             for (int i = 0; i < textFile.Length; i++)
             {
@@ -119,7 +145,7 @@ namespace Lab_08
                 {
                     for (int k = 0; k < consoleColor.Length; k++)
                     {
-                        if (circleColor[i, 0].ToString() == consoleColor[k].ToString())
+                        if (circleColor[i].ToString() == consoleColor[k].ToString())
                         {
                             Console.ForegroundColor = consoleColor[k];
                             Console.WriteLine("circle:");
@@ -129,15 +155,15 @@ namespace Lab_08
                             }
                         }
                     }
-                    for (int j = 0; j < circleColor.GetLength(1); j++)
-                    {
-                        Console.Write(circleColor[i, 0]);
-                        Console.ForegroundColor = ConsoleColor.White;
-                    }
+
+                    Console.Write(circleColor[i]);
+                    Console.ForegroundColor = ConsoleColor.White;
+
                     Console.WriteLine();
                 }
 
             }
+            return "";
         }
         // Получить площади фигур 
         public void GetArea()
@@ -147,43 +173,42 @@ namespace Lab_08
             {
                 if (Shapes[i] is Circle)
                 {
-                    Area = pi * circleCoordinates[i, 2];
-                    ShapesArea[i, 0] = Area;
-                    Console.WriteLine(Area);
+                    ShapesArea[i] = pi * circleCoordinates[i, 2] * circleCoordinates[i, 2];
+                    //Console.WriteLine(Area);
+
                 }
                 if (Shapes[i] is Square)
                 {
-                    Area = (squareCoordinates[i, 3] - squareCoordinates[i, 1]) * (squareCoordinates[i, 3] - squareCoordinates[i, 1]);
-                    ShapesArea[i, 0] = Area;
-                    Console.WriteLine(Area);
+                    ShapesArea[i] = (squareCoordinates[i, 3] - squareCoordinates[i, 1]) * (squareCoordinates[i, 3] - squareCoordinates[i, 1]);
+                    //Console.WriteLine(Area);
+
                 }
 
             }
+
 
         }
         // Отсортировать фигуры по площади 
         public void SortByArea()
         {
-            double temp = 0;
-            for (int i = 0; i < ShapesArea.Length - 1; i++)
+            Array.Sort(ShapesArea);
+        }
+        public void OutPutSortedAreas()
+        {
+            Console.WriteLine("Отсортированные фигуры по их площади");
+            for (int i = 0; i < ShapesArea.Length; i++)
             {
-
-                if (ShapesArea[i, 0] > ShapesArea[i + 1, 0])
-                {
-                    temp = ShapesArea[i, 0];
-                    ShapesArea[i, 0] = ShapesArea[i + 1, 0];
-                    ShapesArea[i + 1, 0] = temp;
-
-                }
-
+                Console.WriteLine(ShapesArea[i] + ": ");
             }
         }
         //  Получить периметр квадратов которые лежат больше чем в одной четверти
         public void GetSquarePerimetrerMoreThanOneQuater()
         {
 
-            double perimetr = 0;
-            for (int i = 0, j = 0; i < Shapes.Length && j < SquarePerimetr.GetLength(0); i++, j++)
+            double perimetr;
+            int k = 0;
+
+            for (int i = 0; i < Shapes.Length; i++)
             {
                 if (Shapes[i] is Square)
                 {
@@ -191,8 +216,9 @@ namespace Lab_08
                     {
 
                         perimetr = Math.Abs((squareCoordinates[i, 4] - squareCoordinates[i, 2]) * 4);
-                        SquarePerimetr[i, 0] = perimetr;
-                        Console.WriteLine($"Квадрат {i} с периметром {perimetr}");
+                        SquarePerimetr[k] = perimetr;
+                        Console.WriteLine($"Квадрат {i + 1} в текстовом файле находится больше чем в 1ой четверти и имеет периметр {perimetr}");
+                        k++;
                     }
                 }
             }
@@ -201,14 +227,23 @@ namespace Lab_08
         public void GetCircleLength()
         {
             const double pi = 3.1415926535;
-            double length = 0;
+           
+            int k = 0;
             for (int i = 0; i < Shapes.Length; i++)
             {
                 if (Shapes[i] is Circle)
                 {
-                    length = 2 * pi * circleCoordinates[i, 2];
-                    CirclesLength[i, 0] = length;
-                    Console.WriteLine(length);
+                    CirclesLength[k] = 2 * pi * circleCoordinates[i, 2];
+                    k++;
+                }
+            }
+          
+            Array.Sort(CirclesLength);
+            for (int i = 0; i < CirclesLength.Length; i++)
+            {
+                if (CirclesLength[i] != 0)
+                {
+                    Console.WriteLine(CirclesLength[i]);
                 }
             }
         }
