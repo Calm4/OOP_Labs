@@ -26,23 +26,20 @@ namespace WindowsFormsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text += $"Результат суммы двух трёхмерных векторов: {{{vectorAddition.VectorX}:{vectorAddition.VectorY}:{vectorAddition.VectorZ}}}";
+            textBox1.Text = $"Результат суммы двух трёхмерных векторов: {{{vectorAddition.VectorX}:{vectorAddition.VectorY}:{vectorAddition.VectorZ}}}";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox1.Text += $"Результат разности двух трёхмерных векторов: {{{vectorSubtraction.VectorX}:{vectorSubtraction.VectorY}:{vectorSubtraction.VectorZ}}}";
+            textBox1.Text = $"Результат разности двух трёхмерных векторов: {{{vectorSubtraction.VectorX}:{vectorSubtraction.VectorY}:{vectorSubtraction.VectorZ}}}";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox1.Text += $"Результат векторного произведения двух трёхмерных векторов: {{{vectorVectorMultiplication.VectorX}:{vectorVectorMultiplication.VectorY}:{vectorVectorMultiplication.VectorZ}}}"
+            textBox1.Text = $"Результат векторного произведения двух трёхмерных векторов: {{{vectorVectorMultiplication.VectorX}:{vectorVectorMultiplication.VectorY}:{vectorVectorMultiplication.VectorZ}}}";
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            textBox1.Text +=
-        }
+        
 
         private void button5_Click(object sender, EventArgs e)
         {

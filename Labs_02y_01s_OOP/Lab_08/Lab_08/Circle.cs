@@ -11,7 +11,7 @@ namespace Lab_08
         private int[] coordinates = new int[2];
        
         private int _radius;
-        private string _CircleColor;
+        private string _circleColor;
         public double Area { get; set; }
 
         public Circle(int x,int y,int radius,string color)
@@ -19,13 +19,13 @@ namespace Lab_08
             coordinates[0] = x;
             coordinates[1] = y;
             _radius = radius;
-            _CircleColor = color;
+            _circleColor = color;
         }
         public void ShowInformation()
         {
             Console.WriteLine($"Координаты центра круга: {{{coordinates[0]},{coordinates[1]}}}");
             Console.WriteLine($"Радиус: {_radius}");
-            Console.WriteLine($"Длина окружности: {CircleLength()}");
+            Console.WriteLine($"Цвет окружности: {_circleColor}");
         }
         public double CircleLength()
         {

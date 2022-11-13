@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Text.RegularExpressions;
-using System.IO;
-using System.Collections;
 
 namespace Lab_08
 {
-    internal class Program
+    internal static class Program
     {
         static void Main(string[] args)
         {
             GeometricShape geometricShape = new GeometricShape();
+
+
 
             bool isWork = true;
             int punctOfMenu = 0;
@@ -37,12 +32,12 @@ namespace Lab_08
                         geometricShape.OutPutCircle();
                         break;
                     case 2:
-                       
+
                         geometricShape.GetArea();
                         geometricShape.SortByArea();
                         geometricShape.OutPutSortedAreas();
                         //geometricShape.OutPutSquare();
-                         //geometricShape.OutPutCircle();
+                        //geometricShape.OutPutCircle();
                         break;
                     case 3:
                         geometricShape.GetSquarePerimetrerMoreThanOneQuater();
@@ -62,26 +57,8 @@ namespace Lab_08
                 Console.Clear();
             }
 
-            /* Console.WriteLine();
-             geometricShape.OutPutSquare();
-             Console.WriteLine("++++++++++++++++++++++++");
-             geometricShape.OutPutCircle();
-             geometricShape.GetArea();
-             geometricShape.SortByArea();
-             geometricShape.OutPutSquare();
-             geometricShape.OutPutCircle();
-             Console.WriteLine("..//./././../././././/,./,");
-             geometricShape.GetSquarePerimetrerMoreThanOneQuater();
-             Console.WriteLine("+___________________++++++++++++__________+=");
-             geometricShape.GetCircleLength();*/
+
 
         }
     }
-
-    //Square: leftBotX :2Q, leftBotY :2Q. leftTopX:2Q. leftTopY:5Q, rightTopX:8Q, rightTopY:5Q, rightBotX:8Q, rightBotY:2Q, 
-
-    //Circle: centerOfCircleX : 3 \\| centerOfCircle : 3 \\| radius : 5 \\| color : Red \\|
-
-
-    //"Square: leftBotX :(.*?), leftBotY :(.*?), leftTopX:(.*?), leftTopY:(.*?), rightTopX:(.*?), rightTopY:(.*?), rightBotX:(.*?), rightBotY:(.*?)"
 }
